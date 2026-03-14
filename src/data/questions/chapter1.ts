@@ -3,756 +3,775 @@ import { Topic } from '../../types';
 export const chapter1Topics: Topic[] = [
   {
     id: 'c1-t1',
-    title: 'Số nguyên âm và Tập hợp các số nguyên',
-    description: 'Làm quen trục số, thứ tự trong tập số nguyên.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=gVtCC8a5sDE',
+    title: 'Tập hợp các số hữu tỉ',
+    description: 'Khái niệm số hữu tỉ, biểu diễn trên trục số, số đối, giá trị tuyệt đối và so sánh hai số hữu tỉ.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     questions: [
       {
         id: 'q1-1-1',
-        text: 'Số nguyên âm nhỏ nhất có hai chữ số là:',
-        options: ['-10', '-99', '-11', '-98'],
-        correctAnswerIndex: 1,
-        explanation: 'Số nguyên âm càng xa số 0 thì càng nhỏ. Số nguyên âm có hai chữ số nhỏ nhất là -99.'
+        text: 'Số hữu tỉ là số có thể viết dưới dạng nào?',
+        options: [
+          '$\\dfrac{a}{b}$ với $a,b\\in\\mathbb{Z},\\ b\\ne 0$',
+          '$\\dfrac{a}{b}$ với $a,b\\in\\mathbb{N}$',
+          '$\\dfrac{a}{b}$ với $a,b\\in\\mathbb{Q}$',
+          '$\\dfrac{a}{0}$ với $a\\in\\mathbb{Z}$'
+        ],
+        correctAnswerIndex: 0,
+        explanation: 'Số hữu tỉ là số viết được dưới dạng $\\dfrac{a}{b}$ với $a,b\\in\\mathbb{Z}$ và $b\\ne0$.'
       },
       {
         id: 'q1-1-2',
-        text: 'Tập hợp các số nguyên $\\mathbb{Z}$ bao gồm:',
-        options: [
-          'Số nguyên dương và số 0',
-          'Số nguyên âm và số 0',
-          'Số nguyên âm, số 0 và số nguyên dương',
-          'Số tự nhiên và số nguyên âm'
-        ],
+        text: 'Tập hợp các số hữu tỉ được kí hiệu là:',
+        options: ['$\\mathbb{N}$', '$\\mathbb{Z}$', '$\\mathbb{Q}$', '$\\mathbb{R}$'],
         correctAnswerIndex: 2,
-        explanation: 'Tập hợp số nguyên $\\mathbb{Z} = \\{\\dots, -3, -2, -1, 0, 1, 2, 3, \\dots\\}$.'
+        explanation: 'Tập hợp số hữu tỉ được kí hiệu là $\\mathbb{Q}$.'
       },
       {
         id: 'q1-1-3',
-        text: 'Khẳng định nào sau đây là đúng?',
-        options: ['-5 > -3', '0 < -1', '-10 < -15', '-2 > -7'],
+        text: 'Trong các số sau, số nào không phải là số hữu tỉ?',
+        options: ['$-3,5$', '$\\dfrac{0}{7}$', '$2\\dfrac{1}{3}$', '$\\dfrac{5}{0}$'],
         correctAnswerIndex: 3,
-        explanation: 'Trên trục số, điểm biểu diễn số -2 nằm bên phải điểm biểu diễn số -7 nên -2 > -7.'
+        explanation: 'Phân số có mẫu số bằng 0 là vô nghĩa nên $\\dfrac{5}{0}$ không phải số hữu tỉ.'
       },
       {
         id: 'q1-1-4',
-        text: 'Số đối của số -8 là:',
-        options: ['8', '-8', '0', '-16'],
-        correctAnswerIndex: 0,
-        explanation: 'Số đối của -8 là 8 vì tổng của chúng bằng 0.'
+        text: 'Số đối của $-\\dfrac{3}{4}$ là:',
+        options: ['$\\dfrac{4}{3}$', '$-\\dfrac{3}{4}$', '$\\dfrac{3}{4}$', '$-\\dfrac{4}{3}$'],
+        correctAnswerIndex: 2,
+        explanation: 'Số đối của một số là số có tổng với nó bằng 0. Số đối của $-\\dfrac{3}{4}$ là $\\dfrac{3}{4}$.'
       },
       {
         id: 'q1-1-5',
-        text: 'Trong các số sau, số nào là số nguyên âm?',
-        options: ['0', '7', '-4', '12'],
-        correctAnswerIndex: 2,
-        explanation: 'Số nguyên âm là các số nhỏ hơn 0, nên -4 là số nguyên âm.'
+        text: 'So sánh hai số $-\\dfrac{1}{2}$ và $-\\dfrac{1}{3}$:',
+        options: [
+          '$-\\dfrac{1}{2} > -\\dfrac{1}{3}$',
+          '$-\\dfrac{1}{2} < -\\dfrac{1}{3}$',
+          '$-\\dfrac{1}{2} = -\\dfrac{1}{3}$',
+          'Không so sánh được'
+        ],
+        correctAnswerIndex: 1,
+        explanation: 'Vì $\\dfrac{1}{2}>\\dfrac{1}{3}$ nên đổi dấu âm sẽ đảo chiều: $-\\dfrac{1}{2}< -\\dfrac{1}{3}$.'
       },
       {
         id: 'q1-1-6',
-        text: 'Trên trục số, số nào nằm bên trái số -3?',
-        options: ['-2', '0', '1', '-5'],
-        correctAnswerIndex: 3,
-        explanation: 'Trên trục số, số nằm bên trái thì nhỏ hơn. -5 < -3.'
+        text: 'Số nào sau đây là số hữu tỉ âm?',
+        options: ['$\\dfrac{7}{8}$', '$0$', '$-\\dfrac{5}{9}$', '$\\dfrac{-2}{-3}$'],
+        correctAnswerIndex: 2,
+        explanation: '$-\\dfrac{5}{9}$ là số hữu tỉ âm. Còn $\\dfrac{-2}{-3}=\\dfrac{2}{3}>0$.'
       },
       {
         id: 'q1-1-7',
-        text: 'Số lớn nhất trong các số sau là:',
-        options: ['-1', '0', '2', '-3'],
-        correctAnswerIndex: 2,
-        explanation: 'So sánh các số: 2 lớn hơn 0, -1 và -3.'
+        text: 'Số $0$ có phải là số hữu tỉ không?',
+        options: ['Không', 'Có', 'Chỉ khi viết dưới dạng số thập phân', 'Chỉ khi là số nguyên'],
+        correctAnswerIndex: 1,
+        explanation: 'Vì $0=\\dfrac{0}{1}$ nên $0$ là số hữu tỉ.'
       },
       {
         id: 'q1-1-8',
-        text: 'Số nhỏ nhất trong các số sau là:',
-        options: ['-12', '-2', '0', '5'],
-        correctAnswerIndex: 0,
-        explanation: 'Trong các số đã cho, -12 là số nhỏ nhất vì nằm xa 0 nhất về bên trái.'
+        text: 'Cách viết nào biểu diễn đúng số hữu tỉ $-2$?',
+        options: ['$-\\dfrac{2}{0}$', '$\\dfrac{-2}{1}$', '$\\dfrac{2}{-0}$', '$\\dfrac{1}{-2}$'],
+        correctAnswerIndex: 1,
+        explanation: '$-2=\\dfrac{-2}{1}$.'
       },
       {
         id: 'q1-1-9',
-        text: 'Giá trị tuyệt đối của -15 là:',
-        options: ['-15', '15', '0', '1'],
+        text: 'Trong các số sau, số nào bằng $\\dfrac{3}{4}$?',
+        options: ['$\\dfrac{6}{10}$', '$\\dfrac{9}{12}$', '$\\dfrac{12}{20}$', '$\\dfrac{15}{24}$'],
         correctAnswerIndex: 1,
-        explanation: 'Giá trị tuyệt đối là khoảng cách đến số 0 nên $|-15| = 15$.'
+        explanation: '$\\dfrac{9}{12}=\\dfrac{3}{4}$.'
       },
       {
         id: 'q1-1-10',
-        text: 'Số nào sau đây không thuộc tập hợp số nguyên?',
-        options: ['-7', '0', '3', '1,5'],
-        correctAnswerIndex: 3,
-        explanation: '1,5 là số thập phân, không phải số nguyên.'
+        text: 'Số thập phân hữu hạn nào sau đây là số hữu tỉ?',
+        options: ['$2,75$', '$\\sqrt{2}$', '$\\pi$', '$\\sqrt{3}$'],
+        correctAnswerIndex: 0,
+        explanation: 'Mọi số thập phân hữu hạn đều là số hữu tỉ.'
       },
       {
         id: 'q1-1-11',
-        text: 'Số đối của 0 là:',
-        options: ['1', '-1', '0', 'Không có'],
-        correctAnswerIndex: 2,
-        explanation: 'Số đối của 0 là 0.'
+        text: 'Giá trị tuyệt đối của $-\\dfrac{7}{9}$ là:',
+        options: ['$-\\dfrac{7}{9}$', '$\\dfrac{7}{9}$', '$\\dfrac{9}{7}$', '$0$'],
+        correctAnswerIndex: 1,
+        explanation: 'Giá trị tuyệt đối là khoảng cách đến 0 nên luôn không âm.'
       },
       {
         id: 'q1-1-12',
-        text: 'Trong các cặp số sau, cặp nào gồm hai số đối nhau?',
-        options: ['3 và 3', '-2 và 2', '-4 và -4', '0 và 1'],
-        correctAnswerIndex: 1,
-        explanation: 'Hai số đối nhau có tổng bằng 0. -2 và 2 là hai số đối nhau.'
+        text: 'Giá trị tuyệt đối của $0$ là:',
+        options: ['$1$', '$-1$', '$0$', 'Không xác định'],
+        correctAnswerIndex: 2,
+        explanation: '$|0|=0$.'
       },
       {
         id: 'q1-1-13',
-        text: 'Số nguyên liền trước của 0 là:',
-        options: ['1', '-1', '-2', '0'],
-        correctAnswerIndex: 1,
-        explanation: 'Số nguyên liền trước 0 là -1.'
+        text: 'Điền dấu thích hợp: $\\dfrac{2}{5}\\ ...\\ 0,4$',
+        options: ['$>$', '$<$', '$=$', '$\\ne$'],
+        correctAnswerIndex: 2,
+        explanation: '$\\dfrac{2}{5}=0,4$.'
       },
       {
         id: 'q1-1-14',
-        text: 'Số nguyên liền sau của -6 là:',
-        options: ['-7', '-5', '5', '6'],
+        text: 'Trong các số sau, số nào lớn nhất?',
+        options: ['$-\\dfrac{3}{2}$', '$-1,4$', '$-\\dfrac{7}{5}$', '$-1,6$'],
         correctAnswerIndex: 1,
-        explanation: 'Số liền sau -6 là -5.'
+        explanation: '$-1,4$ lớn hơn $-1,5$, $-1,4$, $-1,6$.'
       },
       {
         id: 'q1-1-15',
-        text: 'Thứ tự đúng từ bé đến lớn là:',
-        options: ['-1; -3; 0; 2', '-3; -1; 0; 2', '0; -1; -3; 2', '2; 0; -1; -3'],
+        text: 'Trong các số sau, số nào nhỏ nhất?',
+        options: ['$\\dfrac{1}{2}$', '$-\\dfrac{3}{4}$', '$0$', '$\\dfrac{-2}{3}$'],
         correctAnswerIndex: 1,
-        explanation: 'Sắp xếp tăng dần: -3 < -1 < 0 < 2.'
+        explanation: 'So sánh các số âm: $-\\dfrac{3}{4}=-0,75$ nhỏ hơn $-\\dfrac{2}{3}\\approx -0,666...$.'
       },
       {
         id: 'q1-1-16',
-        text: 'Khẳng định nào sau đây sai?',
-        options: ['-8 < -2', '0 > -5', '4 < 7', '-1 > 1'],
-        correctAnswerIndex: 3,
-        explanation: '-1 nhỏ hơn 1 nên khẳng định "-1 > 1" là sai.'
+        text: 'Số nào nằm bên trái số 0 trên trục số?',
+        options: ['$\\dfrac{5}{6}$', '$1$', '$-\\dfrac{1}{7}$', '$\\dfrac{3}{8}$'],
+        correctAnswerIndex: 2,
+        explanation: 'Các số âm nằm bên trái số 0 trên trục số.'
       },
       {
         id: 'q1-1-17',
-        text: 'Số có giá trị tuyệt đối bằng 9 là:',
-        options: ['Chỉ có 9', 'Chỉ có -9', '9 và -9', '0 và 9'],
-        correctAnswerIndex: 2,
-        explanation: '$|9| = 9$ và $|-9| = 9$.'
+        text: 'Số nào nằm giữa $\\dfrac{1}{3}$ và $\\dfrac{2}{3}$?',
+        options: ['$\\dfrac{1}{4}$', '$\\dfrac{1}{2}$', '$\\dfrac{3}{4}$', '$\\dfrac{5}{6}$'],
+        correctAnswerIndex: 1,
+        explanation: '$\\dfrac{1}{2}$ nằm giữa $\\dfrac{1}{3}$ và $\\dfrac{2}{3}$.'
       },
       {
         id: 'q1-1-18',
-        text: 'Điền dấu thích hợp: -14 ... -9',
-        options: ['>', '<', '=', '≥'],
-        correctAnswerIndex: 1,
-        explanation: '-14 nhỏ hơn -9 vì nằm bên trái -9 trên trục số.'
+        text: 'Số đối của $0$ là:',
+        options: ['$1$', '$-1$', '$0$', 'Không tồn tại'],
+        correctAnswerIndex: 2,
+        explanation: 'Số đối của 0 vẫn là 0.'
       },
       {
         id: 'q1-1-19',
-        text: 'Trong các số sau, số nào gần 0 nhất?',
-        options: ['-10', '-1', '3', '5'],
+        text: 'Nếu $x=\\dfrac{-5}{6}$ thì $|x|$ bằng:',
+        options: ['$-\\dfrac{5}{6}$', '$\\dfrac{5}{6}$', '$\\dfrac{6}{5}$', '$0$'],
         correctAnswerIndex: 1,
-        explanation: 'Khoảng cách đến 0 lần lượt là 10, 1, 3, 5 nên -1 gần 0 nhất.'
+        explanation: '$\\left|\\dfrac{-5}{6}\\right|=\\dfrac{5}{6}$.'
       },
       {
         id: 'q1-1-20',
-        text: 'Nếu nhiệt độ là 5°C dưới 0°C thì nhiệt độ được viết là:',
-        options: ['5°C', '-5°C', '0°C', '10°C'],
+        text: 'Trong các phân số sau, phân số nào biểu diễn số âm?',
+        options: ['$\\dfrac{-4}{-9}$', '$\\dfrac{4}{-9}$', '$\\dfrac{-4}{-(-9)}$ ', '$\\dfrac{4}{9}$'],
         correctAnswerIndex: 1,
-        explanation: '5 độ dưới 0 được biểu diễn bằng số -5.'
+        explanation: 'Một dấu âm ở tử hoặc mẫu thì phân số âm.'
+      },
+      {
+        id: 'q1-1-21',
+        text: 'Chọn khẳng định đúng:',
+        options: [
+          'Mọi số nguyên đều là số hữu tỉ',
+          'Mọi số hữu tỉ đều là số nguyên',
+          'Mọi số tự nhiên đều là số vô tỉ',
+          'Số 0 không là số hữu tỉ'
+        ],
+        correctAnswerIndex: 0,
+        explanation: 'Vì mọi số nguyên $a$ đều viết được dưới dạng $\\dfrac{a}{1}$.'
+      },
+      {
+        id: 'q1-1-22',
+        text: 'Số $-0,125$ viết dưới dạng phân số tối giản là:',
+        options: ['$-\\dfrac{1}{8}$', '$-\\dfrac{1}{4}$', '$\\dfrac{1}{8}$', '$-\\dfrac{125}{10}$'],
+        correctAnswerIndex: 0,
+        explanation: '$-0,125=-\\dfrac{125}{1000}=-\\dfrac{1}{8}$.'
+      },
+      {
+        id: 'q1-1-23',
+        text: 'Số $1,2$ viết dưới dạng phân số là:',
+        options: ['$\\dfrac{12}{10}$', '$\\dfrac{12}{100}$', '$\\dfrac{1}{2}$', '$\\dfrac{2}{1}$'],
+        correctAnswerIndex: 0,
+        explanation: '$1,2=\\dfrac{12}{10}=\\dfrac{6}{5}$.'
+      },
+      {
+        id: 'q1-1-24',
+        text: 'Sắp xếp theo thứ tự tăng dần: $-\\dfrac{2}{3},\\ 0,\\ \\dfrac{1}{2},\\ -1$',
+        options: [
+          '$-1< -\\dfrac{2}{3}<0<\\dfrac{1}{2}$',
+          '$-\\dfrac{2}{3}< -1<0<\\dfrac{1}{2}$',
+          '$-1<0< -\\dfrac{2}{3}<\\dfrac{1}{2}$',
+          '$0<\\dfrac{1}{2}< -\\dfrac{2}{3}< -1$'
+        ],
+        correctAnswerIndex: 0,
+        explanation: 'So sánh trực tiếp: $-1$ nhỏ nhất, rồi đến $-\\dfrac{2}{3}$, sau đó $0$, cuối cùng $\\dfrac{1}{2}$.'
+      },
+      {
+        id: 'q1-1-25',
+        text: 'Trong các số sau, số nào bằng $-\\dfrac{3}{2}$?',
+        options: ['$-1,5$', '$1,5$', '$-0,15$', '$\\dfrac{2}{3}$'],
+        correctAnswerIndex: 0,
+        explanation: '$-\\dfrac{3}{2}=-1,5$.'
+      },
+      {
+        id: 'q1-1-26',
+        text: 'Nếu $a>b$ thì số nào sau đây đúng?',
+        options: ['$-a>-b$', '$-a<-b$', '$|a|<|b|$', '$a+b<0$'],
+        correctAnswerIndex: 1,
+        explanation: 'Đổi dấu hai vế của bất đẳng thức thì đổi chiều: nếu $a>b$ thì $-a<-b$.'
+      },
+      {
+        id: 'q1-1-27',
+        text: 'Trong các số sau, số nào có giá trị tuyệt đối nhỏ nhất?',
+        options: ['$-\\dfrac{1}{2}$', '$\\dfrac{1}{3}$', '$-\\dfrac{1}{4}$', '$\\dfrac{2}{5}$'],
+        correctAnswerIndex: 2,
+        explanation: 'So sánh giá trị tuyệt đối: $\\dfrac{1}{4}$ nhỏ nhất.'
+      },
+      {
+        id: 'q1-1-28',
+        text: 'Chọn khẳng định sai:',
+        options: [
+          '$\\dfrac{3}{4}\\in\\mathbb{Q}$',
+          '$-2\\in\\mathbb{Q}$',
+          '$0\\in\\mathbb{Q}$',
+          '$\\dfrac{5}{0}\\in\\mathbb{Q}$'
+        ],
+        correctAnswerIndex: 3,
+        explanation: '$\\dfrac{5}{0}$ không xác định nên không thuộc $\\mathbb{Q}$.'
+      },
+      {
+        id: 'q1-1-29',
+        text: 'Số nào sau đây là số dương?',
+        options: ['$-\\dfrac{2}{7}$', '$\\dfrac{-3}{8}$', '$\\dfrac{-5}{-9}$', '$0$'],
+        correctAnswerIndex: 2,
+        explanation: '$\\dfrac{-5}{-9}=\\dfrac{5}{9}>0$.'
+      },
+      {
+        id: 'q1-1-30',
+        text: 'Số nào sau đây nhỏ hơn 0?',
+        options: ['$\\dfrac{1}{100}$', '$-0,01$', '$0$', '$\\dfrac{-2}{-5}$'],
+        correctAnswerIndex: 1,
+        explanation: '$-0,01$ là số âm.'
+      },
+      {
+        id: 'q1-1-31',
+        text: 'Nếu $x=\\dfrac{3}{7}$ thì số đối của $x$ là:',
+        options: ['$\\dfrac{7}{3}$', '$-\\dfrac{3}{7}$', '$\\dfrac{3}{7}$', '$-\\dfrac{7}{3}$'],
+        correctAnswerIndex: 1,
+        explanation: 'Số đối của $\\dfrac{3}{7}$ là $-\\dfrac{3}{7}$.'
+      },
+      {
+        id: 'q1-1-32',
+        text: 'Nếu $x=-\\dfrac{4}{9}$ thì số đối của $x$ là:',
+        options: ['$-\\dfrac{4}{9}$', '$\\dfrac{4}{9}$', '$\\dfrac{9}{4}$', '$-\\dfrac{9}{4}$'],
+        correctAnswerIndex: 1,
+        explanation: 'Số đối của $-\\dfrac{4}{9}$ là $\\dfrac{4}{9}$.'
+      },
+      {
+        id: 'q1-1-33',
+        text: 'Biểu diễn nào đúng của số hữu tỉ âm?',
+        options: [
+          'Tử và mẫu cùng dấu',
+          'Tử và mẫu khác dấu',
+          'Tử bằng 0',
+          'Mẫu bằng 0'
+        ],
+        correctAnswerIndex: 1,
+        explanation: 'Phân số âm khi tử và mẫu khác dấu.'
+      },
+      {
+        id: 'q1-1-34',
+        text: 'So sánh $\\dfrac{-5}{8}$ và $\\dfrac{-7}{8}$:',
+        options: [
+          '$\\dfrac{-5}{8}>\\dfrac{-7}{8}$',
+          '$\\dfrac{-5}{8}<\\dfrac{-7}{8}$',
+          '$\\dfrac{-5}{8}=\\dfrac{-7}{8}$',
+          'Không so sánh được'
+        ],
+        correctAnswerIndex: 0,
+        explanation: 'Cùng mẫu âm, số nào có tử lớn hơn thì số đó lớn hơn: $-5>-7$.'
       }
     ]
   },
   {
     id: 'c1-t2',
-    title: 'Cộng và Trừ hai số nguyên',
-    description: 'Quy tắc cộng cùng dấu, cộng khác dấu và phép trừ.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=gVtCC8a5sDE',
+    title: 'Cộng, trừ, nhân, chia số hữu tỉ',
+    description: 'Thực hiện các phép tính cơ bản với số hữu tỉ, quy tắc dấu, thứ tự thực hiện phép tính.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     questions: [
       {
         id: 'q1-2-1',
-        text: 'Kết quả của phép tính (-15) + 20 là:',
-        options: ['-35', '35', '-5', '5'],
-        correctAnswerIndex: 3,
-        explanation: 'Cộng hai số nguyên khác dấu: $20 - 15 = 5$.'
+        text: 'Kết quả của phép tính $\\dfrac{1}{4}+\\dfrac{-3}{4}$ là:',
+        options: ['$\\dfrac{1}{2}$', '$-\\dfrac{1}{2}$', '$-\\dfrac{1}{4}$', '$-2$'],
+        correctAnswerIndex: 1,
+        explanation: '$\\dfrac{1}{4}+\\dfrac{-3}{4}=\\dfrac{-2}{4}=-\\dfrac{1}{2}$.'
       },
       {
         id: 'q1-2-2',
-        text: 'Kết quả của phép tính 10 - (-5) là:',
-        options: ['5', '15', '-15', '-5'],
-        correctAnswerIndex: 1,
-        explanation: 'Trừ đi một số âm là cộng với số đối của nó: $10 - (-5) = 10 + 5 = 15$.'
+        text: 'Kết quả của phép tính $\\dfrac{-2}{5}\\times\\dfrac{5}{4}$ là:',
+        options: ['$-\\dfrac{1}{2}$', '$\\dfrac{1}{2}$', '$-\\dfrac{2}{4}$', '$-\\dfrac{5}{8}$'],
+        correctAnswerIndex: 0,
+        explanation: '$\\dfrac{-2}{5}\\times\\dfrac{5}{4}=\\dfrac{-10}{20}=-\\dfrac{1}{2}$.'
       },
       {
         id: 'q1-2-3',
-        text: 'Nhiệt độ buổi sáng là -2°C, buổi trưa tăng thêm 5°C. Nhiệt độ buổi trưa là:',
-        options: ['-7°C', '3°C', '7°C', '-3°C'],
-        correctAnswerIndex: 1,
-        explanation: 'Nhiệt độ buổi trưa: $(-2) + 5 = 3\\,^{\\circ}\\mathrm{C}$.'
+        text: 'Số nghịch đảo của $-1,5$ là:',
+        options: ['$1,5$', '$\\dfrac{3}{2}$', '$-\\dfrac{2}{3}$', '$\\dfrac{2}{3}$'],
+        correctAnswerIndex: 2,
+        explanation: '$-1,5=-\\dfrac{3}{2}$ nên nghịch đảo là $-\\dfrac{2}{3}$.'
       },
       {
         id: 'q1-2-4',
-        text: 'Kết quả của phép tính $(-7) + (-8)$ là:',
-        options: ['15', '-15', '1', '-1'],
+        text: 'Kết quả của phép chia $\\dfrac{1}{2}:\\dfrac{-3}{4}$ là:',
+        options: ['$-\\dfrac{3}{8}$', '$-\\dfrac{2}{3}$', '$\\dfrac{2}{3}$', '$-\\dfrac{3}{2}$'],
         correctAnswerIndex: 1,
-        explanation: 'Cộng hai số âm: cộng phần số rồi giữ dấu âm. Kết quả là -15.'
+        explanation: '$\\dfrac{1}{2}:\\dfrac{-3}{4}=\\dfrac{1}{2}\\times\\dfrac{-4}{3}=-\\dfrac{2}{3}$.'
       },
       {
         id: 'q1-2-5',
-        text: 'Kết quả của phép tính $14 + (-9)$ là:',
-        options: ['23', '-23', '5', '-5'],
-        correctAnswerIndex: 2,
-        explanation: 'Cộng khác dấu: $14 - 9 = 5$.'
+        text: 'Tính: $\\dfrac{2}{3}+\\dfrac{1}{6}$',
+        options: ['$\\dfrac{3}{9}$', '$\\dfrac{5}{6}$', '$\\dfrac{1}{2}$', '$\\dfrac{2}{9}$'],
+        correctAnswerIndex: 1,
+        explanation: '$\\dfrac{2}{3}=\\dfrac{4}{6}$ nên tổng là $\\dfrac{5}{6}$.'
       },
       {
         id: 'q1-2-6',
-        text: 'Kết quả của phép tính $(-12) + 12$ là:',
-        options: ['24', '-24', '0', '1'],
-        correctAnswerIndex: 2,
-        explanation: 'Một số cộng với số đối của nó bằng 0.'
+        text: 'Tính: $\\dfrac{5}{8}-\\dfrac{1}{4}$',
+        options: ['$\\dfrac{1}{8}$', '$\\dfrac{3}{8}$', '$\\dfrac{4}{8}$', '$\\dfrac{1}{2}$'],
+        correctAnswerIndex: 1,
+        explanation: '$\\dfrac{1}{4}=\\dfrac{2}{8}$ nên $\\dfrac{5}{8}-\\dfrac{2}{8}=\\dfrac{3}{8}$.'
       },
       {
         id: 'q1-2-7',
-        text: 'Kết quả của phép tính $6 - 11$ là:',
-        options: ['5', '-5', '17', '-17'],
-        correctAnswerIndex: 1,
-        explanation: '$6 - 11 = 6 + (-11) = -5$.'
+        text: 'Tính: $-\\dfrac{3}{7}+\\dfrac{5}{7}$',
+        options: ['$\\dfrac{2}{7}$', '$-\\dfrac{2}{7}$', '$\\dfrac{8}{7}$', '$-\\dfrac{8}{7}$'],
+        correctAnswerIndex: 0,
+        explanation: 'Cùng mẫu: $-3+5=2$, được $\\dfrac{2}{7}$.'
       },
       {
         id: 'q1-2-8',
-        text: 'Kết quả của phép tính $(-20) - (-3)$ là:',
-        options: ['-23', '-17', '17', '23'],
-        correctAnswerIndex: 1,
-        explanation: '$(-20) - (-3) = -20 + 3 = -17$.'
+        text: 'Tính: $-\\dfrac{4}{9}-\\dfrac{2}{9}$',
+        options: ['$-\\dfrac{6}{9}$', '$\\dfrac{2}{9}$', '$-\\dfrac{2}{9}$', '$\\dfrac{6}{9}$'],
+        correctAnswerIndex: 0,
+        explanation: '$-\\dfrac{4}{9}-\\dfrac{2}{9}=-\\dfrac{6}{9}=-\\dfrac{2}{3}$.'
       },
       {
         id: 'q1-2-9',
-        text: 'Kết quả của phép tính $(-9) + 4$ là:',
-        options: ['-13', '13', '-5', '5'],
-        correctAnswerIndex: 2,
-        explanation: 'Cộng khác dấu: $9 - 4 = 5$, giữ dấu của số có giá trị tuyệt đối lớn hơn là dấu âm.'
+        text: 'Tính: $\\dfrac{3}{5}\\times\\dfrac{10}{9}$',
+        options: ['$\\dfrac{2}{3}$', '$\\dfrac{5}{3}$', '$\\dfrac{30}{45}$', '$\\dfrac{13}{14}$'],
+        correctAnswerIndex: 0,
+        explanation: '$\\dfrac{3}{5}\\times\\dfrac{10}{9}=\\dfrac{30}{45}=\\dfrac{2}{3}$.'
       },
       {
         id: 'q1-2-10',
-        text: 'Kết quả của phép tính $0 - (-8)$ là:',
-        options: ['-8', '8', '0', '16'],
-        correctAnswerIndex: 1,
-        explanation: '$0 - (-8) = 0 + 8 = 8$.'
+        text: 'Tính: $-\\dfrac{2}{3}\\times\\dfrac{9}{4}$',
+        options: ['$-\\dfrac{3}{2}$', '$\\dfrac{3}{2}$', '$-\\dfrac{8}{27}$', '$\\dfrac{8}{27}$'],
+        correctAnswerIndex: 0,
+        explanation: '$-\\dfrac{2}{3}\\times\\dfrac{9}{4}=-\\dfrac{18}{12}=-\\dfrac{3}{2}$.'
       },
       {
         id: 'q1-2-11',
-        text: 'Kết quả của phép tính $(-13) - 7$ là:',
-        options: ['-20', '20', '-6', '6'],
+        text: 'Tính: $\\dfrac{7}{12}:\\dfrac{7}{6}$',
+        options: ['$\\dfrac{1}{2}$', '$2$', '$\\dfrac{14}{18}$', '$\\dfrac{7}{18}$'],
         correctAnswerIndex: 0,
-        explanation: '$(-13) - 7 = (-13) + (-7) = -20$.'
+        explanation: '$\\dfrac{7}{12}:\\dfrac{7}{6}=\\dfrac{7}{12}\\times\\dfrac{6}{7}=\\dfrac{1}{2}$.'
       },
       {
         id: 'q1-2-12',
-        text: 'Kết quả của phép tính $25 + (-25)$ là:',
-        options: ['50', '0', '-50', '1'],
-        correctAnswerIndex: 1,
-        explanation: 'Hai số đối nhau cộng lại bằng 0.'
+        text: 'Tính: $-\\dfrac{5}{8}:\\dfrac{10}{3}$',
+        options: ['$-\\dfrac{3}{16}$', '$\\dfrac{3}{16}$', '$-\\dfrac{50}{24}$', '$\\dfrac{15}{4}$'],
+        correctAnswerIndex: 0,
+        explanation: '$-\\dfrac{5}{8}:\\dfrac{10}{3}=-\\dfrac{5}{8}\\times\\dfrac{3}{10}=-\\dfrac{15}{80}=-\\dfrac{3}{16}$.'
       },
       {
         id: 'q1-2-13',
-        text: 'Kết quả của phép tính $(-4) - (-10)$ là:',
-        options: ['-14', '14', '6', '-6'],
-        correctAnswerIndex: 2,
-        explanation: '$(-4) - (-10) = -4 + 10 = 6$.'
+        text: 'Kết quả của $0,2+0,35$ là:',
+        options: ['$0,55$', '$0,15$', '$0,45$', '$0,65$'],
+        correctAnswerIndex: 0,
+        explanation: '$0,2+0,35=0,55$.'
       },
       {
         id: 'q1-2-14',
-        text: 'Một thợ lặn đang ở độ sâu -6 m, sau đó lặn xuống thêm 4 m. Vị trí mới là:',
-        options: ['-2 m', '-10 m', '10 m', '2 m'],
+        text: 'Kết quả của $1,5-2,25$ là:',
+        options: ['$0,75$', '$-0,75$', '$-1,25$', '$1,25$'],
         correctAnswerIndex: 1,
-        explanation: 'Lặn xuống thêm nghĩa là cộng với số âm: $-6 + (-4) = -10$.'
+        explanation: '$1,5-2,25=-0,75$.'
       },
       {
         id: 'q1-2-15',
-        text: 'Một người đang ở tầng hầm -2, đi lên 5 tầng. Người đó đến tầng:',
-        options: ['3', '-7', '7', '-3'],
+        text: 'Kết quả của $-0,4\\times2,5$ là:',
+        options: ['$-1$', '$1$', '$-0,1$', '$0,1$'],
         correctAnswerIndex: 0,
-        explanation: '$-2 + 5 = 3$.'
+        explanation: '$-0,4\\times2,5=-1$.'
       },
       {
         id: 'q1-2-16',
-        text: 'Tổng của hai số nguyên -18 và -2 là:',
-        options: ['20', '-20', '16', '-16'],
+        text: 'Kết quả của $-1,2:0,3$ là:',
+        options: ['$4$', '$-4$', '$-0,4$', '$0,4$'],
         correctAnswerIndex: 1,
-        explanation: 'Cộng hai số âm: $-18 + (-2) = -20$.'
+        explanation: '$-1,2:0,3=-4$.'
       },
       {
         id: 'q1-2-17',
-        text: 'Hiệu của 7 và -9 là:',
-        options: ['-2', '2', '16', '-16'],
-        correctAnswerIndex: 2,
-        explanation: '$7 - (-9) = 7 + 9 = 16$.'
+        text: 'Tính: $\\left(\\dfrac{1}{2}+\\dfrac{1}{3}\\right)-\\dfrac{1}{6}$',
+        options: ['$\\dfrac{2}{3}$', '$\\dfrac{5}{6}$', '$\\dfrac{1}{6}$', '$1$'],
+        correctAnswerIndex: 0,
+        explanation: '$\\dfrac{1}{2}+\\dfrac{1}{3}=\\dfrac{5}{6}$, rồi $\\dfrac{5}{6}-\\dfrac{1}{6}=\\dfrac{4}{6}=\\dfrac{2}{3}$.'
       },
       {
         id: 'q1-2-18',
-        text: 'Kết quả của phép tính $(-30) + 12$ là:',
-        options: ['-18', '18', '-42', '42'],
+        text: 'Tính: $\\dfrac{3}{4}-\\left(\\dfrac{1}{2}-\\dfrac{1}{8}\\right)$',
+        options: ['$\\dfrac{3}{8}$', '$\\dfrac{1}{8}$', '$\\dfrac{5}{8}$', '$\\dfrac{7}{8}$'],
         correctAnswerIndex: 0,
-        explanation: 'Cộng khác dấu: $30 - 12 = 18$, giữ dấu âm nên kết quả là -18.'
+        explanation: '$\\dfrac{1}{2}-\\dfrac{1}{8}=\\dfrac{3}{8}$, nên $\\dfrac{3}{4}-\\dfrac{3}{8}=\\dfrac{3}{8}$.'
       },
       {
         id: 'q1-2-19',
-        text: 'Kết quả của phép tính $(-5) - 9$ là:',
-        options: ['4', '-4', '-14', '14'],
-        correctAnswerIndex: 2,
-        explanation: '$(-5) - 9 = (-5) + (-9) = -14$.'
+        text: 'Tính: $\\dfrac{2}{5}\\times\\left(-\\dfrac{15}{4}\\right)$',
+        options: ['$-\\dfrac{3}{2}$', '$\\dfrac{3}{2}$', '$-\\dfrac{8}{19}$', '$-\\dfrac{30}{20}$'],
+        correctAnswerIndex: 0,
+        explanation: '$\\dfrac{2}{5}\\times\\left(-\\dfrac{15}{4}\\right)=-\\dfrac{30}{20}=-\\dfrac{3}{2}$.'
       },
       {
         id: 'q1-2-20',
-        text: 'Kết quả của phép tính $18 - 27$ là:',
-        options: ['9', '-9', '45', '-45'],
+        text: 'Tính: $\\left(-\\dfrac{3}{7}\\right):\\left(\\dfrac{9}{14}\\right)$',
+        options: ['$-\\dfrac{2}{3}$', '$\\dfrac{2}{3}$', '$-\\dfrac{3}{2}$', '$\\dfrac{3}{2}$'],
+        correctAnswerIndex: 0,
+        explanation: '$-\\dfrac{3}{7}:\\dfrac{9}{14}=-\\dfrac{3}{7}\\times\\dfrac{14}{9}=-\\dfrac{2}{3}$.'
+      },
+      {
+        id: 'q1-2-21',
+        text: 'Chọn kết quả đúng của $-5+\\dfrac{7}{2}$:',
+        options: ['$-\\dfrac{3}{2}$', '$\\dfrac{3}{2}$', '$-\\dfrac{17}{2}$', '$\\dfrac{17}{2}$'],
+        correctAnswerIndex: 0,
+        explanation: '$-5=-\\dfrac{10}{2}$ nên tổng là $-\\dfrac{3}{2}$.'
+      },
+      {
+        id: 'q1-2-22',
+        text: 'Chọn kết quả đúng của $\\dfrac{11}{6}-\\dfrac{2}{3}$:',
+        options: ['$\\dfrac{7}{6}$', '$\\dfrac{9}{6}$', '$\\dfrac{1}{2}$', '$\\dfrac{13}{18}$'],
+        correctAnswerIndex: 0,
+        explanation: '$\\dfrac{2}{3}=\\dfrac{4}{6}$, nên hiệu là $\\dfrac{7}{6}$.'
+      },
+      {
+        id: 'q1-2-23',
+        text: 'Kết quả của $\\dfrac{-4}{5}\\times\\dfrac{-15}{8}$ là:',
+        options: ['$\\dfrac{3}{2}$', '$-\\dfrac{3}{2}$', '$\\dfrac{60}{40}$', '$\\dfrac{19}{13}$'],
+        correctAnswerIndex: 0,
+        explanation: 'Âm nhân âm bằng dương: $\\dfrac{60}{40}=\\dfrac{3}{2}$.'
+      },
+      {
+        id: 'q1-2-24',
+        text: 'Kết quả của $\\dfrac{5}{6}:\\left(-\\dfrac{10}{9}\\right)$ là:',
+        options: ['$-\\dfrac{3}{4}$', '$\\dfrac{3}{4}$', '$-\\dfrac{4}{3}$', '$\\dfrac{4}{3}$'],
+        correctAnswerIndex: 0,
+        explanation: '$\\dfrac{5}{6}\\times\\dfrac{9}{-10}=-\\dfrac{45}{60}=-\\dfrac{3}{4}$.'
+      },
+      {
+        id: 'q1-2-25',
+        text: 'Giá trị của $\\dfrac{1}{2}+\\dfrac{1}{4}+\\dfrac{1}{8}$ là:',
+        options: ['$\\dfrac{7}{8}$', '$\\dfrac{3}{4}$', '$1$', '$\\dfrac{5}{8}$'],
+        correctAnswerIndex: 0,
+        explanation: 'Quy đồng mẫu 8: $\\dfrac{4}{8}+\\dfrac{2}{8}+\\dfrac{1}{8}=\\dfrac{7}{8}$.'
+      },
+      {
+        id: 'q1-2-26',
+        text: 'Giá trị của $1-\\dfrac{3}{5}$ là:',
+        options: ['$\\dfrac{2}{5}$', '$\\dfrac{3}{5}$', '$\\dfrac{4}{5}$', '$-\\dfrac{2}{5}$'],
+        correctAnswerIndex: 0,
+        explanation: '$1=\\dfrac{5}{5}$ nên hiệu là $\\dfrac{2}{5}$.'
+      },
+      {
+        id: 'q1-2-27',
+        text: 'Giá trị của $-\\dfrac{2}{9}+\\dfrac{5}{9}-\\dfrac{1}{9}$ là:',
+        options: ['$\\dfrac{2}{9}$', '$-\\dfrac{2}{9}$', '$\\dfrac{4}{9}$', '$\\dfrac{1}{9}$'],
+        correctAnswerIndex: 0,
+        explanation: '$-2+5-1=2$, nên kết quả là $\\dfrac{2}{9}$.'
+      },
+      {
+        id: 'q1-2-28',
+        text: 'Kết quả của $\\left(-\\dfrac{3}{4}\\right)+\\left(-\\dfrac{1}{8}\\right)$ là:',
+        options: ['$-\\dfrac{7}{8}$', '$\\dfrac{7}{8}$', '$-\\dfrac{1}{2}$', '$\\dfrac{1}{8}$'],
+        correctAnswerIndex: 0,
+        explanation: '$-\\dfrac{3}{4}=-\\dfrac{6}{8}$, cộng với $-\\dfrac{1}{8}$ được $-\\dfrac{7}{8}$.'
+      },
+      {
+        id: 'q1-2-29',
+        text: 'Kết quả của $\\left(-\\dfrac{5}{6}\\right)-\\left(-\\dfrac{1}{3}\\right)$ là:',
+        options: ['$-\\dfrac{1}{2}$', '$\\dfrac{1}{2}$', '$-\\dfrac{7}{6}$', '$\\dfrac{7}{6}$'],
+        correctAnswerIndex: 0,
+        explanation: '$-\\dfrac{5}{6}+\\dfrac{1}{3}=-\\dfrac{5}{6}+\\dfrac{2}{6}=-\\dfrac{3}{6}=-\\dfrac{1}{2}$.'
+      },
+      {
+        id: 'q1-2-30',
+        text: 'Kết quả của $\\left(-\\dfrac{2}{3}\\right)\\times\\left(-\\dfrac{3}{5}\\right)$ là:',
+        options: ['$\\dfrac{2}{5}$', '$-\\dfrac{2}{5}$', '$\\dfrac{6}{15}$', '$-\\dfrac{6}{15}$'],
+        correctAnswerIndex: 0,
+        explanation: 'Âm nhân âm bằng dương: $\\dfrac{6}{15}=\\dfrac{2}{5}$.'
+      },
+      {
+        id: 'q1-2-31',
+        text: 'Kết quả của $\\left(-\\dfrac{7}{9}\\right):\\left(-\\dfrac{14}{27}\\right)$ là:',
+        options: ['$\\dfrac{3}{2}$', '$-\\dfrac{3}{2}$', '$\\dfrac{1}{2}$', '$2$'],
+        correctAnswerIndex: 0,
+        explanation: '$-\\dfrac{7}{9}\\times\\left(-\\dfrac{27}{14}\\right)=\\dfrac{21}{14}=\\dfrac{3}{2}$.'
+      },
+      {
+        id: 'q1-2-32',
+        text: 'Tính nhanh: $\\dfrac{1}{3}+\\dfrac{2}{3}-1$',
+        options: ['$0$', '$1$', '$-1$', '$\\dfrac{1}{3}$'],
+        correctAnswerIndex: 0,
+        explanation: '$\\dfrac{1}{3}+\\dfrac{2}{3}=1$, nên kết quả bằng 0.'
+      },
+      {
+        id: 'q1-2-33',
+        text: 'Giá trị của $\\dfrac{3}{4}\\times0$ là:',
+        options: ['$\\dfrac{3}{4}$', '$0$', '$1$', 'Không xác định'],
         correctAnswerIndex: 1,
-        explanation: '$18 - 27 = 18 + (-27) = -9$.'
+        explanation: 'Mọi số nhân với 0 đều bằng 0.'
       }
     ]
   },
   {
     id: 'c1-t3',
-    title: 'Quy tắc dấu ngoặc và Quy tắc chuyển vế',
-    description: 'Kỹ năng biến đổi biểu thức.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=gVtCC8a5sDE',
+    title: 'Lũy thừa của một số hữu tỉ',
+    description: 'Quy tắc lũy thừa với số mũ tự nhiên: nhân, chia hai lũy thừa cùng cơ số, lũy thừa của lũy thừa.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     questions: [
       {
         id: 'q1-3-1',
-        text: 'Bỏ dấu ngoặc biểu thức: $a - (b - c + d)$',
-        options: ['$a - b - c + d$', '$a - b + c - d$', '$a + b - c + d$', '$a - b + c + d$'],
-        correctAnswerIndex: 1,
-        explanation: 'Khi bỏ dấu ngoặc có dấu trừ đằng trước, ta phải đổi dấu tất cả các số hạng trong ngoặc.'
+        text: 'Khi nhân hai lũy thừa cùng cơ số, ta:',
+        options: [
+          'Giữ nguyên cơ số, cộng các số mũ',
+          'Giữ nguyên cơ số, nhân các số mũ',
+          'Cộng cơ số, giữ nguyên số mũ',
+          'Đổi dấu số mũ'
+        ],
+        correctAnswerIndex: 0,
+        explanation: '$x^m\\cdot x^n=x^{m+n}$.'
       },
       {
         id: 'q1-3-2',
-        text: 'Tìm $x$ biết: $x - 15 = -20$',
-        options: ['$x = -5$', '$x = 5$', '$x = -35$', '$x = 35$'],
+        text: 'Tính $\\left(-\\dfrac{1}{2}\\right)^3$',
+        options: ['$-\\dfrac{1}{8}$', '$\\dfrac{1}{8}$', '$-\\dfrac{1}{6}$', '$\\dfrac{1}{6}$'],
         correctAnswerIndex: 0,
-        explanation: 'Chuyển vế đổi dấu: $x = -20 + 15 = -5$.'
+        explanation: 'Lũy thừa bậc lẻ của số âm là số âm: $\\left(-\\dfrac{1}{2}\\right)^3=-\\dfrac{1}{8}$.'
       },
       {
         id: 'q1-3-3',
-        text: 'Bỏ dấu ngoặc: $5 + (a - b)$',
-        options: ['$5 + a - b$', '$5 - a - b$', '$5 + a + b$', '$5 - a + b$'],
-        correctAnswerIndex: 0,
-        explanation: 'Trước ngoặc là dấu cộng nên giữ nguyên dấu các số hạng trong ngoặc.'
+        text: 'Kết quả của $\\left(x^2\\right)^3$ là:',
+        options: ['$x^5$', '$x^6$', '$x^8$', '$x^9$'],
+        correctAnswerIndex: 1,
+        explanation: 'Lũy thừa của lũy thừa: $(x^m)^n=x^{mn}$.'
       },
       {
         id: 'q1-3-4',
-        text: 'Bỏ dấu ngoặc: $m - (n + p)$',
-        options: ['$m - n + p$', '$m + n + p$', '$m - n - p$', '$m + n - p$'],
-        correctAnswerIndex: 2,
-        explanation: 'Dấu trừ trước ngoặc làm đổi dấu các số hạng: $m - n - p$.'
+        text: 'Tính $\\left(\\dfrac{2}{3}\\right)^2$',
+        options: ['$\\dfrac{4}{9}$', '$\\dfrac{2}{9}$', '$\\dfrac{4}{6}$', '$\\dfrac{9}{4}$'],
+        correctAnswerIndex: 0,
+        explanation: '$\\left(\\dfrac{2}{3}\\right)^2=\\dfrac{2^2}{3^2}=\\dfrac{4}{9}$.'
       },
       {
         id: 'q1-3-5',
-        text: 'Tìm $x$ biết: $x + 7 = -3$',
-        options: ['$x = 10$', '$x = -10$', '$x = 4$', '$x = -4$'],
+        text: 'Tính $\\left(-\\dfrac{3}{5}\\right)^2$',
+        options: ['$-\\dfrac{9}{25}$', '$\\dfrac{9}{25}$', '$\\dfrac{6}{10}$', '$-\\dfrac{6}{10}$'],
         correctAnswerIndex: 1,
-        explanation: 'Chuyển 7 sang vế phải: $x = -3 - 7 = -10$.'
+        explanation: 'Lũy thừa bậc chẵn của số âm là số dương.'
       },
       {
         id: 'q1-3-6',
-        text: 'Tìm $x$ biết: $x - (-8) = 3$',
-        options: ['$x = -5$', '$x = 5$', '$x = 11$', '$x = -11$'],
-        correctAnswerIndex: 0,
-        explanation: '$x - (-8) = x + 8 = 3$ nên $x = 3 - 8 = -5$.'
+        text: 'Tính $\\left(-\\dfrac{2}{3}\\right)^4$',
+        options: ['$-\\dfrac{16}{81}$', '$\\dfrac{16}{81}$', '$\\dfrac{8}{27}$', '$-\\dfrac{8}{27}$'],
+        correctAnswerIndex: 1,
+        explanation: 'Bậc 4 là chẵn nên kết quả dương: $\\dfrac{16}{81}$.'
       },
       {
         id: 'q1-3-7',
-        text: 'Tìm $x$ biết: $-12 + x = 5$',
-        options: ['$x = -17$', '$x = 17$', '$x = -7$', '$x = 7$'],
+        text: 'Tính $\\left(\\dfrac{-1}{4}\\right)^1$',
+        options: ['$\\dfrac{1}{4}$', '$-\\dfrac{1}{4}$', '$1$', '$-1$'],
         correctAnswerIndex: 1,
-        explanation: 'Chuyển $-12$ sang vế phải thành $+12$: $x = 5 + 12 = 17$.'
+        explanation: 'Mọi số mũ 1 bằng chính nó.'
       },
       {
         id: 'q1-3-8',
-        text: 'Bỏ dấu ngoặc: $-(a + b - c)$',
-        options: ['$-a + b - c$', '$-a - b + c$', '$a + b - c$', '$a - b + c$'],
+        text: 'Giá trị của $2^3$ là:',
+        options: ['$6$', '$8$', '$9$', '$16$'],
         correctAnswerIndex: 1,
-        explanation: 'Dấu trừ trước ngoặc làm đổi dấu từng số hạng.'
+        explanation: '$2^3=2\\cdot2\\cdot2=8$.'
       },
       {
         id: 'q1-3-9',
-        text: 'Tìm $x$ biết: $x + (-6) = -10$',
-        options: ['$x = -4$', '$x = 4$', '$x = -16$', '$x = 16$'],
-        correctAnswerIndex: 0,
-        explanation: '$x - 6 = -10$ nên $x = -10 + 6 = -4$.'
+        text: 'Giá trị của $(-2)^3$ là:',
+        options: ['$8$', '$-8$', '$6$', '$-6$'],
+        correctAnswerIndex: 1,
+        explanation: '$(-2)^3=-8$.'
       },
       {
         id: 'q1-3-10',
-        text: 'Bỏ dấu ngoặc: $12 - (5 - 3)$',
-        options: ['$12 - 5 - 3$', '$12 - 5 + 3$', '$12 + 5 - 3$', '$12 + 5 + 3$'],
+        text: 'Giá trị của $(-2)^4$ là:',
+        options: ['$-16$', '$16$', '$8$', '$-8$'],
         correctAnswerIndex: 1,
-        explanation: 'Đổi dấu trong ngoặc: $12 - 5 + 3$.'
+        explanation: '$(-2)^4=16$.'
       },
       {
         id: 'q1-3-11',
-        text: 'Tìm $x$ biết: $x - 9 = 14$',
-        options: ['$x = 5$', '$x = -5$', '$x = 23$', '$x = -23$'],
-        correctAnswerIndex: 2,
-        explanation: 'Chuyển $-9$ sang vế phải: $x = 14 + 9 = 23$.'
+        text: 'Điền vào chỗ trống: $a^m\\cdot a^n=$',
+        options: ['$a^{m+n}$', '$a^{m-n}$', '$a^{mn}$', '$2a^{m+n}$'],
+        correctAnswerIndex: 0,
+        explanation: 'Quy tắc nhân hai lũy thừa cùng cơ số.'
       },
       {
         id: 'q1-3-12',
-        text: 'Tìm $x$ biết: $-3 + x = -11$',
-        options: ['$x = -14$', '$x = 14$', '$x = -8$', '$x = 8$'],
-        correctAnswerIndex: 2,
-        explanation: '$x = -11 + 3 = -8$.'
+        text: 'Điền vào chỗ trống: $a^m:a^n=$ (với $a\\ne0$, $m\\ge n$)',
+        options: ['$a^{m+n}$', '$a^{m-n}$', '$a^{mn}$', '$a^{n-m}$'],
+        correctAnswerIndex: 1,
+        explanation: 'Khi chia hai lũy thừa cùng cơ số, ta trừ các số mũ.'
       },
       {
         id: 'q1-3-13',
-        text: 'Biểu thức nào bằng với $a - (b - c - d)$?',
-        options: ['$a - b - c - d$', '$a - b + c + d$', '$a + b - c + d$', '$a - b + c - d$'],
-        correctAnswerIndex: 1,
-        explanation: 'Khi bỏ ngoặc có dấu trừ, đổi dấu các số hạng trong ngoặc.'
+        text: 'Điền vào chỗ trống: $(a^m)^n=$',
+        options: ['$a^{m+n}$', '$a^{m-n}$', '$a^{mn}$', '$a^m$'],
+        correctAnswerIndex: 2,
+        explanation: 'Lũy thừa của lũy thừa: $(a^m)^n=a^{mn}$.'
       },
       {
         id: 'q1-3-14',
-        text: 'Tìm $x$ biết: $x + 15 = 0$',
-        options: ['$x = 15$', '$x = -15$', '$x = 0$', '$x = 1$'],
-        correctAnswerIndex: 1,
-        explanation: '$x = 0 - 15 = -15$.'
+        text: 'Tính $3^2\\cdot3^4$',
+        options: ['$3^6$', '$3^8$', '$9^6$', '$3^2$'],
+        correctAnswerIndex: 0,
+        explanation: 'Cùng cơ số 3 nên cộng số mũ: $2+4=6$.'
       },
       {
         id: 'q1-3-15',
-        text: 'Tìm $x$ biết: $x - (-4) = -9$',
-        options: ['$x = -13$', '$x = 13$', '$x = -5$', '$x = 5$'],
+        text: 'Tính $5^7:5^3$',
+        options: ['$5^4$', '$5^{10}$', '$5^{21}$', '$5^3$'],
         correctAnswerIndex: 0,
-        explanation: '$x + 4 = -9$ nên $x = -9 - 4 = -13$.'
+        explanation: 'Chia hai lũy thừa cùng cơ số: $5^{7-3}=5^4$.'
       },
       {
         id: 'q1-3-16',
-        text: 'Bỏ dấu ngoặc: $-(-a + b - c)$',
-        options: ['$a + b - c$', '$a - b + c$', '$-a - b + c$', '$-a + b - c$'],
+        text: 'Tính $(2^3)^2$',
+        options: ['$2^5$', '$2^6$', '$4^5$', '$8^2$'],
         correctAnswerIndex: 1,
-        explanation: 'Đổi dấu từng số hạng: $-(-a + b - c) = a - b + c$.'
+        explanation: '$(2^3)^2=2^{3\\cdot2}=2^6$.'
       },
       {
         id: 'q1-3-17',
-        text: 'Tìm $x$ biết: $7 - x = 10$',
-        options: ['$x = -3$', '$x = 3$', '$x = 17$', '$x = -17$'],
-        correctAnswerIndex: 0,
-        explanation: '$7 - x = 10$ nên $-x = 3$, do đó $x = -3$.'
+        text: 'Tính $\\left(\\dfrac{3}{2}\\right)^3$',
+        options: ['$\\dfrac{9}{8}$', '$\\dfrac{27}{8}$', '$\\dfrac{6}{8}$', '$\\dfrac{8}{27}$'],
+        correctAnswerIndex: 1,
+        explanation: '$\\left(\\dfrac{3}{2}\\right)^3=\\dfrac{27}{8}$.'
       },
       {
         id: 'q1-3-18',
-        text: 'Tìm $x$ biết: $x - 2 = -2$',
-        options: ['$x = -4$', '$x = 0$', '$x = 4$', '$x = -1$'],
+        text: 'Tính $\\left(-\\dfrac{2}{5}\\right)^3$',
+        options: ['$\\dfrac{8}{125}$', '$-\\dfrac{8}{125}$', '$-\\dfrac{6}{15}$', '$\\dfrac{6}{15}$'],
         correctAnswerIndex: 1,
-        explanation: '$x = -2 + 2 = 0$.'
+        explanation: 'Bậc lẻ nên kết quả âm.'
       },
       {
         id: 'q1-3-19',
-        text: 'Bỏ dấu ngoặc: $8 + (-3 + x)$',
-        options: ['$8 - 3 + x$', '$8 + 3 + x$', '$8 - 3 - x$', '$8 + 3 - x$'],
-        correctAnswerIndex: 0,
-        explanation: 'Dấu cộng trước ngoặc nên giữ nguyên các số hạng: $8 + (-3) + x = 8 - 3 + x$.'
+        text: 'Tính $\\left(-\\dfrac{2}{5}\\right)^2$',
+        options: ['$-\\dfrac{4}{25}$', '$\\dfrac{4}{25}$', '$\\dfrac{2}{25}$', '$-\\dfrac{2}{25}$'],
+        correctAnswerIndex: 1,
+        explanation: 'Bậc chẵn nên kết quả dương.'
       },
       {
         id: 'q1-3-20',
-        text: 'Tìm $x$ biết: $-20 = x + 6$',
-        options: ['$x = -14$', '$x = 14$', '$x = -26$', '$x = 26$'],
-        correctAnswerIndex: 2,
-        explanation: '$x = -20 - 6 = -26$.'
-      }
-    ]
-  },
-  {
-    id: 'c1-t4',
-    title: 'Nhân và Chia hai số nguyên',
-    description: 'Quy tắc dấu của tích và thương.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=gVtCC8a5sDE',
-    questions: [
-      {
-        id: 'q1-4-1',
-        text: 'Kết quả của phép tính $(-8) \\times (-5)$ là:',
-        options: ['-40', '40', '-13', '13'],
-        correctAnswerIndex: 1,
-        explanation: 'Tích của hai số nguyên cùng dấu là một số nguyên dương.'
-      },
-      {
-        id: 'q1-4-2',
-        text: 'Kết quả của phép tính $36 : (-4)$ là:',
-        options: ['9', '-9', '40', '-32'],
-        correctAnswerIndex: 1,
-        explanation: 'Thương của hai số nguyên khác dấu là một số nguyên âm.'
-      },
-      {
-        id: 'q1-4-3',
-        text: 'Kết quả của phép tính $(-6) \\times 7$ là:',
-        options: ['42', '-42', '13', '-13'],
-        correctAnswerIndex: 1,
-        explanation: 'Tích của hai số khác dấu là số âm.'
-      },
-      {
-        id: 'q1-4-4',
-        text: 'Kết quả của phép tính $(-45) : (-5)$ là:',
-        options: ['-9', '9', '-40', '40'],
-        correctAnswerIndex: 1,
-        explanation: 'Hai số cùng dấu chia nhau cho kết quả dương.'
-      },
-      {
-        id: 'q1-4-5',
-        text: 'Kết quả của phép tính $0 \\times (-9)$ là:',
-        options: ['-9', '9', '0', '1'],
-        correctAnswerIndex: 2,
-        explanation: 'Bất cứ số nào nhân với 0 đều bằng 0.'
-      },
-      {
-        id: 'q1-4-6',
-        text: 'Kết quả của phép tính $(-24) : 6$ là:',
-        options: ['-4', '4', '-30', '30'],
-        correctAnswerIndex: 0,
-        explanation: 'Hai số khác dấu chia nhau cho kết quả âm: $-24 : 6 = -4$.'
-      },
-      {
-        id: 'q1-4-7',
-        text: 'Kết quả của phép tính $9 \\times (-3)$ là:',
-        options: ['27', '-27', '6', '-6'],
-        correctAnswerIndex: 1,
-        explanation: '$9 \\times (-3) = -27$.'
-      },
-      {
-        id: 'q1-4-8',
-        text: 'Kết quả của phép tính $(-7) \\times (-2)$ là:',
-        options: ['-14', '14', '-9', '9'],
-        correctAnswerIndex: 1,
-        explanation: 'Hai số âm nhân nhau được số dương.'
-      },
-      {
-        id: 'q1-4-9',
-        text: 'Kết quả của phép tính $56 : (-7)$ là:',
-        options: ['8', '-8', '49', '-49'],
-        correctAnswerIndex: 1,
-        explanation: '$56 : (-7) = -8$.'
-      },
-      {
-        id: 'q1-4-10',
-        text: 'Kết quả của phép tính $(-81) : 9$ là:',
-        options: ['9', '-9', '-72', '72'],
-        correctAnswerIndex: 1,
-        explanation: '$-81 : 9 = -9$.'
-      },
-      {
-        id: 'q1-4-11',
-        text: 'Kết quả của phép tính $(-11) \\times 0$ là:',
-        options: ['11', '-11', '0', '1'],
-        correctAnswerIndex: 2,
-        explanation: 'Số nào nhân với 0 cũng bằng 0.'
-      },
-      {
-        id: 'q1-4-12',
-        text: 'Kết quả của phép tính $(-32) : (-8)$ là:',
-        options: ['-4', '4', '-24', '24'],
-        correctAnswerIndex: 1,
-        explanation: 'Hai số âm chia nhau được số dương: 4.'
-      },
-      {
-        id: 'q1-4-13',
-        text: 'Kết quả của phép tính $12 \\times (-4)$ là:',
-        options: ['48', '-48', '16', '-16'],
-        correctAnswerIndex: 1,
-        explanation: 'Hai số khác dấu nhân nhau được số âm.'
-      },
-      {
-        id: 'q1-4-14',
-        text: 'Kết quả của phép tính $(-63) : (-9)$ là:',
-        options: ['-7', '7', '-54', '54'],
-        correctAnswerIndex: 1,
-        explanation: '$(-63) : (-9) = 7$.'
-      },
-      {
-        id: 'q1-4-15',
-        text: 'Số thích hợp điền vào chỗ trống: $(-5) \\times \\ldots = 35$',
-        options: ['7', '-7', '5', '-5'],
-        correctAnswerIndex: 1,
-        explanation: 'Để tích bằng 35 và một thừa số là -5 thì thừa số còn lại phải là -7.'
-      },
-      {
-        id: 'q1-4-16',
-        text: 'Số thích hợp điền vào chỗ trống: $\\ldots : (-6) = 8$',
-        options: ['48', '-48', '14', '-14'],
-        correctAnswerIndex: 1,
-        explanation: 'Muốn thương là 8 khi chia cho -6 thì số bị chia là -48.'
-      },
-      {
-        id: 'q1-4-17',
-        text: 'Kết quả của phép tính $(-3) \\times (-4) \\times 2$ là:',
-        options: ['24', '-24', '12', '-12'],
-        correctAnswerIndex: 0,
-        explanation: '$(-3) \\times (-4) = 12$; $12 \\times 2 = 24$.'
-      },
-      {
-        id: 'q1-4-18',
-        text: 'Kết quả của phép tính $72 : (-8) : 3$ là:',
-        options: ['-3', '3', '-27', '27'],
-        correctAnswerIndex: 0,
-        explanation: '$72 : (-8) = -9$; $-9 : 3 = -3$.'
-      },
-      {
-        id: 'q1-4-19',
-        text: 'Dấu của tích $(-a) \\times b$ với $a > 0, b > 0$ là:',
-        options: ['Dương', 'Âm', 'Bằng 0', 'Không xác định'],
-        correctAnswerIndex: 1,
-        explanation: 'Một số âm nhân với một số dương cho kết quả âm.'
-      },
-      {
-        id: 'q1-4-20',
-        text: 'Khẳng định nào sau đây đúng?',
-        options: [
-          'Tích của hai số âm là số âm',
-          'Thương của hai số cùng dấu là số âm',
-          'Tích của hai số khác dấu là số âm',
-          'Số 0 chia cho 0 bằng 0'
-        ],
-        correctAnswerIndex: 2,
-        explanation: 'Tích của hai số khác dấu là số âm. Các khẳng định còn lại sai.'
-      }
-    ]
-  },
-  {
-    id: 'c1-t5',
-    title: 'Bội và Ước của một số nguyên',
-    description: 'Tính chất chia hết trong tập số nguyên.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=gVtCC8a5sDE',
-    questions: [
-      {
-        id: 'q1-5-1',
-        text: 'Tập hợp các ước của 4 trong tập số nguyên là:',
-        options: ['{1; 2; 4}', '{-1; -2; -4}', '{-4; -2; -1; 1; 2; 4}', '{-4; -2; 0; 2; 4}'],
-        correctAnswerIndex: 2,
-        explanation: 'Ước của 4 bao gồm cả số dương và số âm: $\\pm 1, \\pm 2, \\pm 4$.'
-      },
-      {
-        id: 'q1-5-2',
-        text: 'Số nào sau đây là bội của -5?',
-        options: ['2', '-10', '3', '12'],
-        correctAnswerIndex: 1,
-        explanation: '-10 chia hết cho -5 nên -10 là bội của -5.'
-      },
-      {
-        id: 'q1-5-3',
-        text: 'Số nào sau đây là ước của -12?',
-        options: ['5', '6', '7', '8'],
-        correctAnswerIndex: 1,
-        explanation: '-12 chia hết cho 6 nên 6 là ước của -12.'
-      },
-      {
-        id: 'q1-5-4',
-        text: 'Tập hợp các bội của 3 là:',
-        options: ['{0; 3; 6; 9}', 'Các số chia hết cho 3', 'Các số lớn hơn 3', 'Các số lẻ'],
-        correctAnswerIndex: 1,
-        explanation: 'Bội của 3 là các số nguyên chia hết cho 3.'
-      },
-      {
-        id: 'q1-5-5',
-        text: 'Trong các số sau, số nào không phải là bội của 4?',
-        options: ['-8', '0', '12', '10'],
+        text: 'Biểu thức nào bằng $x^7$?',
+        options: ['$x^3\\cdot x^4$', '$x^8:x$', '$\\left(x^7\\right)^1$', '$Cả ba đáp án trên$'],
         correctAnswerIndex: 3,
-        explanation: '10 không chia hết cho 4.'
+        explanation: '$x^3\\cdot x^4=x^7$, $x^8:x=x^7$, và $(x^7)^1=x^7$.'
       },
       {
-        id: 'q1-5-6',
-        text: 'Ước của 1 trong tập số nguyên là:',
-        options: ['{1}', '{-1; 1}', '{0; 1}', '{-1; 0; 1}'],
+        id: 'q1-3-21',
+        text: 'Tính $10^2$',
+        options: ['$20$', '$100$', '$1000$', '$12$'],
         correctAnswerIndex: 1,
-        explanation: '1 có hai ước nguyên là -1 và 1.'
+        explanation: '$10^2=100$.'
       },
       {
-        id: 'q1-5-7',
-        text: 'Số 0 là:',
-        options: ['Ước của mọi số nguyên', 'Bội của mọi số nguyên khác 0', 'Không là ước, không là bội', 'Chỉ là ước của 0'],
+        id: 'q1-3-22',
+        text: 'Tính $0,1^2$',
+        options: ['$0,01$', '$0,02$', '$0,1$', '$1$'],
+        correctAnswerIndex: 0,
+        explanation: '$0,1^2=0,01$.'
+      },
+      {
+        id: 'q1-3-23',
+        text: 'Tính $(-0,1)^3$',
+        options: ['$0,001$', '$-0,001$', '$-0,01$', '$0,01$'],
         correctAnswerIndex: 1,
-        explanation: 'Với mọi số nguyên khác 0, ta có $0 = a \\times 0$ nên 0 là bội của $a$.'
+        explanation: '$(-0,1)^3=-0,001$.'
       },
       {
-        id: 'q1-5-8',
-        text: 'Trong các số sau, số nào là bội của 7?',
-        options: ['21', '22', '24', '25'],
-        correctAnswerIndex: 0,
-        explanation: '$21 = 7 \\times 3$ nên 21 là bội của 7.'
-      },
-      {
-        id: 'q1-5-9',
-        text: 'Số nào sau đây là ước của 18?',
-        options: ['4', '5', '6', '7'],
+        id: 'q1-3-24',
+        text: 'Tính $\\left(\\dfrac{1}{10}\\right)^3$',
+        options: ['$\\dfrac{1}{30}$', '$\\dfrac{1}{100}$', '$\\dfrac{1}{1000}$', '$\\dfrac{3}{10}$'],
         correctAnswerIndex: 2,
-        explanation: '18 chia hết cho 6 nên 6 là ước của 18.'
+        explanation: '$\\left(\\dfrac{1}{10}\\right)^3=\\dfrac{1}{1000}$.'
       },
       {
-        id: 'q1-5-10',
-        text: 'Tập hợp các ước của -3 trong tập số nguyên là:',
-        options: ['{-3; 3}', '{-1; 1; -3; 3}', '{1; 3}', '{-1; -3}'],
-        correctAnswerIndex: 1,
-        explanation: 'Các ước nguyên của -3 là $\\pm 1, \\pm 3$.'
-      },
-      {
-        id: 'q1-5-11',
-        text: 'Nếu $a$ là bội của $b$ thì:',
-        options: ['a chia hết cho b', 'b chia hết cho a', 'a nhỏ hơn b', 'b bằng 0'],
-        correctAnswerIndex: 0,
-        explanation: 'Định nghĩa: $a$ là bội của $b$ khi $a$ chia hết cho $b$.'
-      },
-      {
-        id: 'q1-5-12',
-        text: 'Trong các số sau, số nào là ước của 30?',
-        options: ['8', '9', '10', '11'],
-        correctAnswerIndex: 2,
-        explanation: '30 chia hết cho 10.'
-      },
-      {
-        id: 'q1-5-13',
-        text: 'Trong các số sau, số nào là bội của -6?',
-        options: ['18', '20', '25', '31'],
-        correctAnswerIndex: 0,
-        explanation: '18 chia hết cho -6 nên 18 là bội của -6.'
-      },
-      {
-        id: 'q1-5-14',
-        text: 'Số nào sau đây không phải là ước của 20?',
-        options: ['-4', '5', '10', '6'],
-        correctAnswerIndex: 3,
-        explanation: '20 không chia hết cho 6.'
-      },
-      {
-        id: 'q1-5-15',
-        text: 'Các ước nguyên của 2 là:',
-        options: ['{-2; -1; 1; 2}', '{1; 2}', '{-1; 1; 2}', '{-2; 2}'],
-        correctAnswerIndex: 0,
-        explanation: 'Ước nguyên của 2 gồm $\\pm 1$ và $\\pm 2$.'
-      },
-      {
-        id: 'q1-5-16',
-        text: 'Trong các số sau, số nào là bội chung của 2 và 3?',
-        options: ['8', '10', '12', '14'],
-        correctAnswerIndex: 2,
-        explanation: '12 chia hết cho cả 2 và 3.'
-      },
-      {
-        id: 'q1-5-17',
-        text: 'Khẳng định nào sau đây đúng?',
+        id: 'q1-3-25',
+        text: 'Khẳng định nào đúng?',
         options: [
-          'Mọi số nguyên đều là ước của 0',
-          '0 là ước của mọi số nguyên',
-          'Mọi số nguyên khác 0 đều là ước của chính nó',
-          '1 không phải là ước của số nào'
+          '$(-3)^2=-9$',
+          '$(-3)^2=9$',
+          '$(-3)^3=9$',
+          '$(-3)^4=-81$'
         ],
-        correctAnswerIndex: 2,
-        explanation: 'Mỗi số nguyên khác 0 đều chia hết cho chính nó.'
-      },
-      {
-        id: 'q1-5-18',
-        text: 'Trong các số sau, số nào là ước của -25?',
-        options: ['4', '5', '6', '8'],
         correctAnswerIndex: 1,
-        explanation: '-25 chia hết cho 5 nên 5 là ước của -25.'
+        explanation: '$(-3)^2=9$.'
       },
       {
-        id: 'q1-5-19',
-        text: 'Một số là bội của 9 nếu số đó:',
-        options: ['Chia hết cho 9', 'Lớn hơn 9', 'Là số lẻ', 'Là số âm'],
+        id: 'q1-3-26',
+        text: 'Khẳng định nào đúng?',
+        options: [
+          '$(-2)^5=32$',
+          '$(-2)^5=-32$',
+          '$(-2)^5=-10$',
+          '$(-2)^5=10$'
+        ],
+        correctAnswerIndex: 1,
+        explanation: 'Số âm mũ lẻ cho kết quả âm.'
+      },
+      {
+        id: 'q1-3-27',
+        text: 'Tính $2^4:2^2$',
+        options: ['$2^2$', '$2^6$', '$4^2$', '$2$'],
         correctAnswerIndex: 0,
-        explanation: 'Định nghĩa bội của 9 là các số chia hết cho 9.'
+        explanation: '$2^{4-2}=2^2$.'
       },
       {
-        id: 'q1-5-20',
-        text: 'Trong các số sau, số nào vừa là bội của 4 vừa là bội của 5?',
-        options: ['10', '15', '20', '25'],
-        correctAnswerIndex: 2,
-        explanation: '20 chia hết cho cả 4 và 5.'
+        id: 'q1-3-28',
+        text: 'Tính $7^1\\cdot7^2$',
+        options: ['$7^2$', '$7^3$', '$14^3$', '$7$'],
+        correctAnswerIndex: 1,
+        explanation: 'Cộng số mũ: $1+2=3$.'
+      },
+      {
+        id: 'q1-3-29',
+        text: 'Tính $(x^3)^4$',
+        options: ['$x^7$', '$x^{12}$', '$x$', '$x^{64}$'],
+        correctAnswerIndex: 1,
+        explanation: 'Nhân số mũ: $3\\cdot4=12$.'
+      },
+      {
+        id: 'q1-3-30',
+        text: 'Tính $\\left(\\dfrac{1}{2}\\right)^4$',
+        options: ['$\\dfrac{1}{8}$', '$\\dfrac{1}{16}$', '$\\dfrac{2}{16}$', '$\\dfrac{4}{16}$'],
+        correctAnswerIndex: 1,
+        explanation: '$\\left(\\dfrac{1}{2}\\right)^4=\\dfrac{1}{16}$.'
+      },
+      {
+        id: 'q1-3-31',
+        text: 'Tính $\\left(-\\dfrac{1}{3}\\right)^4$',
+        options: ['$-\\dfrac{1}{81}$', '$\\dfrac{1}{81}$', '$\\dfrac{1}{12}$', '$-\\dfrac{1}{12}$'],
+        correctAnswerIndex: 1,
+        explanation: 'Bậc chẵn nên kết quả dương: $\\dfrac{1}{81}$.'
+      },
+      {
+        id: 'q1-3-32',
+        text: 'Tính $\\left(-\\dfrac{1}{3}\\right)^5$',
+        options: ['$\\dfrac{1}{243}$', '$-\\dfrac{1}{243}$', '$-\\dfrac{1}{81}$', '$\\dfrac{1}{81}$'],
+        correctAnswerIndex: 1,
+        explanation: 'Bậc lẻ nên kết quả âm: $-\\dfrac{1}{243}$.'
+      },
+      {
+        id: 'q1-3-33',
+        text: 'Tính giá trị của $1^8$',
+        options: ['$0$', '$1$', '$8$', 'Không xác định'],
+        correctAnswerIndex: 1,
+        explanation: '$1$ lũy thừa với số mũ tự nhiên bất kỳ vẫn bằng $1$.'
       }
     ]
   }

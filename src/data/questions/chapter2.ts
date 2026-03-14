@@ -3,746 +3,770 @@ import { Topic } from '../../types';
 export const chapter2Topics: Topic[] = [
   {
     id: 'c2-t1',
-    title: 'Mở rộng khái niệm phân số',
-    description: 'Phân số có tử và mẫu là số nguyên.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=7vVqLQk2D9Y',
+    title: 'Số vô tỉ và căn bậc hai số học',
+    description: 'Nhận biết số vô tỉ, căn bậc hai số học của một số không âm và các phép tính cơ bản.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     questions: [
       {
         id: 'q2-1-1',
-        text: 'Phân số nào sau đây bằng phân số $\\frac{-3}{4}$?',
-        options: ['$\\frac{3}{-4}$', '$\\frac{-6}{-8}$', '$\\frac{9}{12}$', '$\\frac{3}{4}$'],
-        correctAnswerIndex: 0,
-        explanation: 'Nhân cả tử và mẫu với $-1$ ta được phân số bằng nó: $\\frac{(-3)\\times(-1)}{4\\times(-1)} = \\frac{3}{-4}$.'
+        text: 'Trong các số sau, số nào là số vô tỉ?',
+        options: ['$\\dfrac{3}{4}$', '$-2,5$', '$\\sqrt{2}$', '$0,125$'],
+        correctAnswerIndex: 2,
+        explanation: '$\\sqrt{2}$ là số vô tỉ vì không viết được dưới dạng phân số $\\dfrac{a}{b}$ với $a,b\\in\\mathbb{Z}, b\\ne0$.'
       },
       {
         id: 'q2-1-2',
-        text: 'Điều kiện để $\\frac{a}{b}$ là một phân số là:',
-        options: ['$a, b$ là số tự nhiên, $b \\neq 0$', '$a, b$ là số nguyên, $b \\neq 0$', '$a$ là số nguyên, $b$ là số tự nhiên khác $0$', '$a, b$ là số nguyên'],
-        correctAnswerIndex: 1,
-        explanation: 'Phân số có dạng $\\frac{a}{b}$ với $a, b \\in \\mathbb{Z}$ và $b \\neq 0$.'
+        text: 'Số nào sau đây là số hữu tỉ?',
+        options: ['$\\pi$', '$\\sqrt{3}$', '$\\dfrac{-7}{9}$', '$\\sqrt{5}$'],
+        correctAnswerIndex: 2,
+        explanation: '$\\dfrac{-7}{9}$ là số hữu tỉ vì viết được dưới dạng phân số.'
       },
       {
         id: 'q2-1-3',
-        text: 'Phân số nào sau đây không phải là phân số?',
-        options: ['$\\frac{3}{5}$', '$\\frac{-2}{7}$', '$\\frac{4}{0}$', '$\\frac{0}{9}$'],
-        correctAnswerIndex: 2,
-        explanation: 'Mẫu số của phân số phải khác 0 nên $\\frac{4}{0}$ không phải là phân số.'
+        text: 'Căn bậc hai số học của $9$ là:',
+        options: ['$-3$', '$3$', '$\\pm 3$', '$81$'],
+        correctAnswerIndex: 1,
+        explanation: 'Căn bậc hai số học của một số không âm là số không âm có bình phương bằng số đó. Với $9$, căn bậc hai số học là $3$.'
       },
       {
         id: 'q2-1-4',
-        text: 'Trong các phân số sau, phân số nào bằng $\\frac{2}{-5}$?',
-        options: ['$\\frac{-2}{5}$', '$\\frac{2}{5}$', '$\\frac{-4}{-10}$', '$\\frac{4}{10}$'],
-        correctAnswerIndex: 0,
-        explanation: 'Dấu âm có thể đặt ở tử hoặc mẫu: $\\frac{2}{-5} = \\frac{-2}{5}$.'
+        text: 'Kết quả của $\\sqrt{16}$ là:',
+        options: ['$-4$', '$4$', '$\\pm4$', '$8$'],
+        correctAnswerIndex: 1,
+        explanation: '$\\sqrt{16}=4$.'
       },
       {
         id: 'q2-1-5',
-        text: 'Phân số $\\frac{0}{-7}$ có giá trị bằng:',
-        options: ['-7', '0', '7', 'Không xác định'],
-        correctAnswerIndex: 1,
-        explanation: 'Tử số bằng 0 và mẫu khác 0 thì phân số có giá trị bằng 0.'
+        text: 'Kết quả của $\\sqrt{0}$ là:',
+        options: ['$0$', '$1$', 'Không xác định', '$\\pm 0$'],
+        correctAnswerIndex: 0,
+        explanation: '$\\sqrt{0}=0$.'
       },
       {
         id: 'q2-1-6',
-        text: 'Phân số nào sau đây bằng $\\frac{5}{8}$?',
-        options: ['$\\frac{10}{16}$', '$\\frac{15}{16}$', '$\\frac{20}{24}$', '$\\frac{25}{32}$'],
-        correctAnswerIndex: 0,
-        explanation: 'Nhân cả tử và mẫu với 2: $\\frac{5}{8}=\\frac{10}{16}$.'
+        text: 'Số nào sau đây không có căn bậc hai số học trong tập số thực?',
+        options: ['$0$', '$4$', '$\\dfrac{1}{9}$', '$-1$'],
+        correctAnswerIndex: 3,
+        explanation: 'Trong tập số thực, số âm không có căn bậc hai số học.'
       },
       {
         id: 'q2-1-7',
-        text: 'Phân số $\\frac{-6}{9}$ và phân số nào dưới đây bằng nhau?',
-        options: ['$\\frac{2}{3}$', '$\\frac{-2}{3}$', '$\\frac{6}{-18}$', '$\\frac{-12}{27}$'],
-        correctAnswerIndex: 1,
-        explanation: 'Rút gọn $\\frac{-6}{9}$ bằng cách chia cả tử và mẫu cho 3 được $\\frac{-2}{3}$.'
+        text: 'Kết quả của $\\sqrt{25}$ là:',
+        options: ['$5$', '$-5$', '$\\pm5$', '$10$'],
+        correctAnswerIndex: 0,
+        explanation: '$\\sqrt{25}=5$.'
       },
       {
         id: 'q2-1-8',
-        text: 'Tử số của phân số $\\frac{-11}{13}$ là:',
-        options: ['11', '-11', '13', '-13'],
-        correctAnswerIndex: 1,
-        explanation: 'Tử số là số ở trên dấu gạch ngang, ở đây là -11.'
+        text: 'Kết quả của $\\sqrt{1}$ là:',
+        options: ['$1$', '$-1$', '$\\pm1$', '$0$'],
+        correctAnswerIndex: 0,
+        explanation: '$\\sqrt{1}=1$.'
       },
       {
         id: 'q2-1-9',
-        text: 'Mẫu số của phân số $\\frac{-11}{13}$ là:',
-        options: ['11', '-11', '13', '-13'],
-        correctAnswerIndex: 2,
-        explanation: 'Mẫu số là số ở dưới dấu gạch ngang, ở đây là 13.'
+        text: 'Kết quả của $\\sqrt{\\dfrac{1}{4}}$ là:',
+        options: ['$\\dfrac{1}{2}$', '$-\\dfrac{1}{2}$', '$\\pm\\dfrac{1}{2}$', '$\\dfrac{1}{8}$'],
+        correctAnswerIndex: 0,
+        explanation: '$\\sqrt{\\dfrac{1}{4}}=\\dfrac{1}{2}$.'
       },
       {
         id: 'q2-1-10',
-        text: 'Phân số nào sau đây là phân số âm?',
-        options: ['$\\frac{3}{7}$', '$\\frac{-4}{9}$', '$\\frac{-5}{-6}$', '$\\frac{0}{8}$'],
-        correctAnswerIndex: 1,
-        explanation: 'Phân số âm là phân số có giá trị nhỏ hơn 0. $\\frac{-4}{9}$ là phân số âm.'
+        text: 'Kết quả của $\\sqrt{\\dfrac{9}{16}}$ là:',
+        options: ['$\\dfrac{3}{4}$', '$-\\dfrac{3}{4}$', '$\\pm\\dfrac{3}{4}$', '$\\dfrac{9}{8}$'],
+        correctAnswerIndex: 0,
+        explanation: '$\\sqrt{\\dfrac{9}{16}}=\\dfrac{3}{4}$.'
       },
       {
         id: 'q2-1-11',
-        text: 'Phân số nào sau đây là phân số dương?',
-        options: ['$\\frac{-3}{4}$', '$\\frac{3}{-4}$', '$\\frac{-3}{-4}$', '$\\frac{0}{5}$'],
-        correctAnswerIndex: 2,
-        explanation: 'Âm chia âm bằng dương nên $\\frac{-3}{-4}$ là phân số dương.'
+        text: 'Khẳng định nào đúng?',
+        options: [
+          '$\\sqrt{36}=6$',
+          '$\\sqrt{36}=-6$',
+          '$\\sqrt{36}=\\pm 6$',
+          '$\\sqrt{36}=18$'
+        ],
+        correctAnswerIndex: 0,
+        explanation: 'Kí hiệu $\\sqrt{36}$ chỉ căn bậc hai số học nên bằng $6$.'
       },
       {
         id: 'q2-1-12',
-        text: 'Giá trị của phân số $\\frac{-12}{-3}$ là:',
-        options: ['-4', '4', '3', '-3'],
-        correctAnswerIndex: 1,
-        explanation: 'Âm chia âm bằng dương nên $\\frac{-12}{-3}=4$.'
+        text: 'Số nào sau đây là số vô tỉ?',
+        options: ['$0,75$', '$\\dfrac{11}{20}$', '$\\sqrt{7}$', '$-\\dfrac{5}{2}$'],
+        correctAnswerIndex: 2,
+        explanation: '$\\sqrt{7}$ là số vô tỉ.'
       },
       {
         id: 'q2-1-13',
-        text: 'Phân số nào sau đây bằng 1?',
-        options: ['$\\frac{5}{-5}$', '$\\frac{-7}{7}$', '$\\frac{9}{9}$', '$\\frac{0}{6}$'],
-        correctAnswerIndex: 2,
-        explanation: 'Phân số có tử bằng mẫu và mẫu khác 0 thì bằng 1.'
+        text: 'Trong các số sau, số nào là căn bậc hai số học của $49$?',
+        options: ['$-7$', '$7$', '$\\pm 7$', '$14$'],
+        correctAnswerIndex: 1,
+        explanation: '$\\sqrt{49}=7$.'
       },
       {
         id: 'q2-1-14',
-        text: 'Phân số nào sau đây bằng -1?',
-        options: ['$\\frac{-8}{8}$', '$\\frac{8}{8}$', '$\\frac{-8}{-8}$', '$\\frac{0}{8}$'],
-        correctAnswerIndex: 0,
-        explanation: 'Phân số có tử là số đối của mẫu thì bằng -1.'
+        text: 'Số nào sau đây bằng $\\sqrt{64}$?',
+        options: ['$6$', '$7$', '$8$', '$9$'],
+        correctAnswerIndex: 2,
+        explanation: '$\\sqrt{64}=8$.'
       },
       {
         id: 'q2-1-15',
-        text: 'Trong các phân số sau, phân số nào có giá trị bằng 0?',
-        options: ['$\\frac{0}{15}$', '$\\frac{15}{0}$', '$\\frac{-15}{15}$', '$\\frac{15}{15}$'],
+        text: 'Kết quả của $\\sqrt{100}$ là:',
+        options: ['$10$', '$-10$', '$\\pm 10$', '$20$'],
         correctAnswerIndex: 0,
-        explanation: 'Phân số có tử bằng 0 và mẫu khác 0 thì có giá trị bằng 0.'
+        explanation: '$\\sqrt{100}=10$.'
       },
       {
         id: 'q2-1-16',
-        text: 'Viết số nguyên $-3$ dưới dạng phân số, ta được:',
-        options: ['$\\frac{-3}{1}$', '$\\frac{1}{-3}$', '$\\frac{3}{1}$', '$\\frac{-1}{3}$'],
-        correctAnswerIndex: 0,
-        explanation: 'Mọi số nguyên đều viết được dưới dạng phân số có mẫu bằng 1.'
+        text: 'Số nào sau đây là số vô tỉ?',
+        options: ['$\\sqrt{9}$', '$\\sqrt{16}$', '$\\sqrt{18}$', '$\\sqrt{25}$'],
+        correctAnswerIndex: 2,
+        explanation: '$\\sqrt{18}=3\\sqrt{2}$ là số vô tỉ.'
       },
       {
         id: 'q2-1-17',
-        text: 'Phân số $\\frac{14}{-21}$ bằng phân số nào sau đây?',
-        options: ['$\\frac{2}{3}$', '$\\frac{-2}{3}$', '$\\frac{2}{-1}$', '$\\frac{-14}{-21}$'],
-        correctAnswerIndex: 1,
-        explanation: 'Rút gọn $\\frac{14}{-21}$ bằng cách chia cả tử và mẫu cho 7 được $\\frac{2}{-3}=\\frac{-2}{3}$.'
+        text: 'Kết quả của $\\sqrt{121}$ là:',
+        options: ['$11$', '$-11$', '$\\pm11$', '$22$'],
+        correctAnswerIndex: 0,
+        explanation: '$\\sqrt{121}=11$.'
       },
       {
         id: 'q2-1-18',
-        text: 'Chọn phát biểu đúng:',
-        options: ['Mẫu số của phân số có thể bằng 0', 'Tử số của phân số phải là số tự nhiên', 'Tử và mẫu của phân số đều là số nguyên, mẫu khác 0', 'Mẫu số của phân số luôn dương'],
+        text: 'Kết quả của $\\sqrt{144}$ là:',
+        options: ['$10$', '$11$', '$12$', '$13$'],
         correctAnswerIndex: 2,
-        explanation: 'Đây là định nghĩa đúng của phân số.'
+        explanation: '$\\sqrt{144}=12$.'
       },
       {
         id: 'q2-1-19',
-        text: 'Phân số nào sau đây bằng $\\frac{-1}{2}$?',
-        options: ['$\\frac{2}{-4}$', '$\\frac{1}{2}$', '$\\frac{-2}{-4}$', '$\\frac{4}{-6}$'],
+        text: 'Giá trị của $\\sqrt{\\dfrac{49}{64}}$ là:',
+        options: ['$\\dfrac{7}{8}$', '$-\\dfrac{7}{8}$', '$\\pm\\dfrac{7}{8}$', '$\\dfrac{14}{8}$'],
         correctAnswerIndex: 0,
-        explanation: '$\\frac{2}{-4}=\\frac{-1}{2}$ sau khi rút gọn.'
+        explanation: '$\\sqrt{\\dfrac{49}{64}}=\\dfrac{7}{8}$.'
       },
       {
         id: 'q2-1-20',
-        text: 'Phân số $\\frac{a}{b}$ bằng 0 khi:',
-        options: ['$a=0, b\\neq0$', '$a\\neq0, b=0$', '$a=b$', '$a=-b$'],
+        text: 'Khẳng định nào sau đây sai?',
+        options: [
+          '$\\sqrt{2}$ là số vô tỉ',
+          '$\\sqrt{4}=2$',
+          '$\\sqrt{-4}=-2$',
+          '$\\sqrt{0}=0$'
+        ],
+        correctAnswerIndex: 2,
+        explanation: 'Trong tập số thực, $\\sqrt{-4}$ không xác định.'
+      },
+      {
+        id: 'q2-1-21',
+        text: 'Tìm số $x\\ge0$ biết $x^2=81$',
+        options: ['$-9$', '$9$', '$\\pm9$', '$8$'],
+        correctAnswerIndex: 1,
+        explanation: 'Vì $x\\ge0$ và $x^2=81$ nên $x=\\sqrt{81}=9$.'
+      },
+      {
+        id: 'q2-1-22',
+        text: 'Tìm số $x\\ge0$ biết $x^2=\\dfrac{4}{9}$',
+        options: ['$\\dfrac{2}{3}$', '$-\\dfrac{2}{3}$', '$\\pm\\dfrac{2}{3}$', '$\\dfrac{4}{3}$'],
         correctAnswerIndex: 0,
-        explanation: 'Phân số bằng 0 khi tử số bằng 0 và mẫu số khác 0.'
+        explanation: '$x=\\sqrt{\\dfrac{4}{9}}=\\dfrac{2}{3}$.'
+      },
+      {
+        id: 'q2-1-23',
+        text: 'Tìm số $x\\ge0$ biết $x^2=0,49$',
+        options: ['$0,7$', '$-0,7$', '$1,4$', '$0,49$'],
+        correctAnswerIndex: 0,
+        explanation: '$x=\\sqrt{0,49}=0,7$.'
+      },
+      {
+        id: 'q2-1-24',
+        text: 'Giá trị của $\\sqrt{225}$ là:',
+        options: ['$13$', '$14$', '$15$', '$16$'],
+        correctAnswerIndex: 2,
+        explanation: '$\\sqrt{225}=15$.'
+      },
+      {
+        id: 'q2-1-25',
+        text: 'Số nào sau đây là số hữu tỉ?',
+        options: ['$\\sqrt{50}$', '$\\sqrt{81}$', '$\\sqrt{11}$', '$\\pi$'],
+        correctAnswerIndex: 1,
+        explanation: '$\\sqrt{81}=9$ là số hữu tỉ.'
+      },
+      {
+        id: 'q2-1-26',
+        text: 'Số nào sau đây là số vô tỉ?',
+        options: ['$\\sqrt{36}$', '$\\dfrac{7}{8}$', '$-1,25$', '$\\sqrt{10}$'],
+        correctAnswerIndex: 3,
+        explanation: '$\\sqrt{10}$ là số vô tỉ.'
+      },
+      {
+        id: 'q2-1-27',
+        text: 'Khẳng định nào đúng?',
+        options: [
+          'Mọi số vô tỉ đều là số thực',
+          'Mọi số thực đều là số vô tỉ',
+          'Mọi số hữu tỉ đều là số vô tỉ',
+          '$\\sqrt{9}$ là số vô tỉ'
+        ],
+        correctAnswerIndex: 0,
+        explanation: 'Số vô tỉ là một bộ phận của tập số thực.'
+      },
+      {
+        id: 'q2-1-28',
+        text: 'Kết quả của $\\sqrt{400}$ là:',
+        options: ['$18$', '$19$', '$20$', '$40$'],
+        correctAnswerIndex: 2,
+        explanation: '$\\sqrt{400}=20$.'
+      },
+      {
+        id: 'q2-1-29',
+        text: 'Kết quả của $\\sqrt{0,01}$ là:',
+        options: ['$0,001$', '$0,01$', '$0,1$', '$1$'],
+        correctAnswerIndex: 2,
+        explanation: '$0,1^2=0,01$ nên $\\sqrt{0,01}=0,1$.'
+      },
+      {
+        id: 'q2-1-30',
+        text: 'Kết quả của $\\sqrt{2,25}$ là:',
+        options: ['$1,5$', '$-1,5$', '$2,5$', '$1,25$'],
+        correctAnswerIndex: 0,
+        explanation: '$1,5^2=2,25$ nên $\\sqrt{2,25}=1,5$.'
+      },
+      {
+        id: 'q2-1-31',
+        text: 'Số nào sau đây không phải số thực?',
+        options: ['$\\sqrt{5}$', '$-3$', '$\\sqrt{-9}$', '$0$'],
+        correctAnswerIndex: 2,
+        explanation: 'Trong tập số thực, $\\sqrt{-9}$ không xác định.'
+      },
+      {
+        id: 'q2-1-32',
+        text: 'Tìm số $x\\ge0$ biết $x^2=169$',
+        options: ['$11$', '$12$', '$13$', '$14$'],
+        correctAnswerIndex: 2,
+        explanation: '$x=\\sqrt{169}=13$.'
+      },
+      {
+        id: 'q2-1-33',
+        text: 'Tìm số $x\\ge0$ biết $x^2=\\dfrac{25}{36}$',
+        options: ['$\\dfrac{5}{6}$', '$-\\dfrac{5}{6}$', '$\\pm\\dfrac{5}{6}$', '$\\dfrac{25}{6}$'],
+        correctAnswerIndex: 0,
+        explanation: '$x=\\sqrt{\\dfrac{25}{36}}=\\dfrac{5}{6}$.'
       }
     ]
   },
   {
     id: 'c2-t2',
-    title: 'Tính chất cơ bản của phân số',
-    description: 'Kỹ năng rút gọn về phân số tối giản.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=5mK7Qx9Lr2A',
+    title: 'Tập hợp số thực',
+    description: 'Nhận biết số thực, biểu diễn số thực trên trục số, so sánh các số thực.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     questions: [
       {
         id: 'q2-2-1',
-        text: 'Phân số tối giản của phân số $\\frac{15}{20}$ là:',
-        options: ['$\\frac{3}{4}$', '$\\frac{5}{4}$', '$\\frac{3}{5}$', '$\\frac{1}{2}$'],
-        correctAnswerIndex: 0,
-        explanation: 'Chia cả tử và mẫu cho $\\text{ƯCLN}(15, 20) = 5$ ta được $\\frac{3}{4}$.'
+        text: 'Tập hợp số thực được kí hiệu là:',
+        options: ['$\\mathbb{N}$', '$\\mathbb{Z}$', '$\\mathbb{Q}$', '$\\mathbb{R}$'],
+        correctAnswerIndex: 3,
+        explanation: 'Tập hợp số thực được kí hiệu là $\\mathbb{R}$.'
       },
       {
         id: 'q2-2-2',
-        text: 'Phân số nào sau đây là phân số tối giản?',
-        options: ['6/8', '14/21', '5/12', '9/15'],
-        correctAnswerIndex: 2,
-        explanation: 'Phân số tối giản là phân số mà tử và mẫu chỉ có ước chung là 1 và -1. ƯCLN(5, 12) = 1.'
+        text: 'Khẳng định nào đúng?',
+        options: [
+          '$\\mathbb{Q}\\subset\\mathbb{R}$',
+          '$\\mathbb{R}\\subset\\mathbb{Q}$',
+          '$\\mathbb{Z}\\subset$ số vô tỉ',
+          'Số vô tỉ không thuộc $\\mathbb{R}$'
+        ],
+        correctAnswerIndex: 0,
+        explanation: 'Mọi số hữu tỉ đều là số thực.'
       },
       {
         id: 'q2-2-3',
-        text: 'Rút gọn phân số $\\frac{18}{24}$ ta được:',
-        options: ['$\\frac{3}{4}$', '$\\frac{2}{3}$', '$\\frac{6}{8}$', '$\\frac{9}{12}$'],
-        correctAnswerIndex: 0,
-        explanation: 'Chia cả tử và mẫu cho 6: $\\frac{18}{24}=\\frac{3}{4}$.'
+        text: 'Số nào sau đây thuộc tập số thực?',
+        options: ['$\\sqrt{2}$', '$-5$', '$\\dfrac{3}{7}$', 'Cả ba số trên'],
+        correctAnswerIndex: 3,
+        explanation: 'Số thực gồm cả số hữu tỉ và số vô tỉ.'
       },
       {
         id: 'q2-2-4',
-        text: 'Phân số $\\frac{7}{9}$ được nhân cả tử và mẫu với 3 thì được:',
-        options: ['$\\frac{10}{12}$', '$\\frac{21}{27}$', '$\\frac{14}{18}$', '$\\frac{7}{27}$'],
-        correctAnswerIndex: 1,
-        explanation: 'Nhân cả tử và mẫu với 3: $\\frac{7}{9}=\\frac{21}{27}$.'
+        text: 'Trong các số sau, số nào là số vô tỉ?',
+        options: ['$0,5$', '$\\dfrac{7}{11}$', '$\\sqrt{6}$', '$-8$'],
+        correctAnswerIndex: 2,
+        explanation: '$\\sqrt{6}$ là số vô tỉ.'
       },
       {
         id: 'q2-2-5',
-        text: 'Phân số $\\frac{20}{28}$ sau khi rút gọn là:',
-        options: ['$\\frac{5}{7}$', '$\\frac{10}{14}$', '$\\frac{4}{7}$', '$\\frac{2}{3}$'],
-        correctAnswerIndex: 0,
-        explanation: 'Chia cả tử và mẫu cho 4 được $\\frac{5}{7}$.'
+        text: 'Số nào sau đây là số thực âm?',
+        options: ['$\\sqrt{3}$', '$-\\sqrt{5}$', '$0$', '$\\dfrac{2}{3}$'],
+        correctAnswerIndex: 1,
+        explanation: '$-\\sqrt{5}$ là số thực âm.'
       },
       {
         id: 'q2-2-6',
-        text: 'Phân số nào bằng $\\frac{4}{11}$?',
-        options: ['$\\frac{8}{22}$', '$\\frac{12}{22}$', '$\\frac{16}{33}$', '$\\frac{20}{44}$'],
-        correctAnswerIndex: 0,
-        explanation: 'Nhân cả tử và mẫu với 2: $\\frac{4}{11}=\\frac{8}{22}$.'
+        text: 'Số nào sau đây lớn hơn 0?',
+        options: ['$-\\sqrt{2}$', '$-\\dfrac{1}{3}$', '$\\sqrt{7}$', '$-0,1$'],
+        correctAnswerIndex: 2,
+        explanation: '$\\sqrt{7}>0$.'
       },
       {
         id: 'q2-2-7',
-        text: 'Rút gọn phân số $\\frac{-16}{40}$ ta được:',
-        options: ['$\\frac{-2}{5}$', '$\\frac{2}{5}$', '$\\frac{-4}{5}$', '$\\frac{4}{10}$'],
+        text: 'Khẳng định nào đúng?',
+        options: [
+          'Mọi số nguyên đều là số thực',
+          'Mọi số thực đều là số nguyên',
+          'Mọi số vô tỉ đều là số nguyên',
+          '$\\sqrt{2}$ không là số thực'
+        ],
         correctAnswerIndex: 0,
-        explanation: 'Chia cả tử và mẫu cho 8: $\\frac{-16}{40}=\\frac{-2}{5}$.'
+        explanation: 'Số nguyên là tập con của số thực.'
       },
       {
         id: 'q2-2-8',
-        text: 'Phân số nào dưới đây không bằng $\\frac{3}{5}$?',
-        options: ['$\\frac{6}{10}$', '$\\frac{9}{15}$', '$\\frac{12}{20}$', '$\\frac{15}{20}$'],
-        correctAnswerIndex: 3,
-        explanation: '$\\frac{15}{20}=\\frac{3}{4}$, không bằng $\\frac{3}{5}$.'
+        text: 'So sánh $\\sqrt{4}$ và $1,9$',
+        options: ['$\\sqrt{4}<1,9$', '$\\sqrt{4}>1,9$', '$\\sqrt{4}=1,9$', 'Không so sánh được'],
+        correctAnswerIndex: 1,
+        explanation: '$\\sqrt{4}=2>1,9$.'
       },
       {
         id: 'q2-2-9',
-        text: 'Để được phân số bằng $\\frac{2}{7}$, ta có thể:',
-        options: ['Nhân tử với 2, mẫu với 3', 'Chia tử và mẫu cho cùng một số khác 0', 'Cộng tử và mẫu với cùng một số', 'Trừ tử và mẫu với cùng một số'],
-        correctAnswerIndex: 1,
-        explanation: 'Tính chất cơ bản của phân số là nhân hoặc chia cả tử và mẫu cho cùng một số khác 0.'
+        text: 'So sánh $\\sqrt{2}$ và $1,5$',
+        options: ['$\\sqrt{2}<1,5$', '$\\sqrt{2}>1,5$', '$\\sqrt{2}=1,5$', 'Không xác định'],
+        correctAnswerIndex: 0,
+        explanation: '$\\sqrt{2}\\approx1,414<1,5$.'
       },
       {
         id: 'q2-2-10',
-        text: 'Phân số $\\frac{35}{49}$ rút gọn thành:',
-        options: ['$\\frac{5}{7}$', '$\\frac{7}{5}$', '$\\frac{15}{21}$', '$\\frac{10}{14}$'],
-        correctAnswerIndex: 0,
-        explanation: 'Chia cả tử và mẫu cho 7 được $\\frac{5}{7}$.'
+        text: 'So sánh $\\sqrt{3}$ và $1,7$',
+        options: ['$\\sqrt{3}<1,7$', '$\\sqrt{3}>1,7$', '$\\sqrt{3}=1,7$', 'Không so sánh được'],
+        correctAnswerIndex: 1,
+        explanation: '$\\sqrt{3}\\approx1,732>1,7$.'
       },
       {
         id: 'q2-2-11',
-        text: 'ƯCLN của 24 và 36 là:',
-        options: ['6', '8', '12', '18'],
-        correctAnswerIndex: 2,
-        explanation: 'ƯCLN(24, 36) = 12.'
+        text: 'Số nào sau đây nằm giữa 1 và 2?',
+        options: ['$\\sqrt{5}$', '$\\sqrt{2}$', '$\\sqrt{8}$', '$\\sqrt{10}$'],
+        correctAnswerIndex: 1,
+        explanation: '$\\sqrt{2}\\approx1,414$ nằm giữa 1 và 2.'
       },
       {
         id: 'q2-2-12',
-        text: 'Phân số tối giản của $\\frac{24}{36}$ là:',
-        options: ['$\\frac{2}{3}$', '$\\frac{3}{2}$', '$\\frac{4}{6}$', '$\\frac{6}{9}$'],
-        correctAnswerIndex: 0,
-        explanation: 'Chia cả tử và mẫu cho 12 được $\\frac{2}{3}$.'
+        text: 'Số nào sau đây nằm giữa 2 và 3?',
+        options: ['$\\sqrt{3}$', '$\\sqrt{5}$', '$\\sqrt{8}$', '$\\sqrt{10}$'],
+        correctAnswerIndex: 2,
+        explanation: '$\\sqrt{8}\\approx2,828$ nằm giữa 2 và 3.'
       },
       {
         id: 'q2-2-13',
-        text: 'Phân số nào sau đây là phân số tối giản?',
-        options: ['$\\frac{8}{12}$', '$\\frac{11}{13}$', '$\\frac{18}{24}$', '$\\frac{21}{35}$'],
+        text: 'Số nào sau đây nhỏ hơn 1?',
+        options: ['$\\sqrt{2}$', '$\\sqrt{0,25}$', '$\\sqrt{3}$', '$\\sqrt{5}$'],
         correctAnswerIndex: 1,
-        explanation: '11 và 13 chỉ có ước chung là 1.'
+        explanation: '$\\sqrt{0,25}=0,5<1$.'
       },
       {
         id: 'q2-2-14',
-        text: 'Phân số $\\frac{-9}{12}$ rút gọn được thành:',
-        options: ['$\\frac{-3}{4}$', '$\\frac{3}{4}$', '$\\frac{-9}{4}$', '$\\frac{3}{-12}$'],
-        correctAnswerIndex: 0,
-        explanation: 'Chia cả tử và mẫu cho 3: $\\frac{-9}{12}=\\frac{-3}{4}$.'
+        text: 'Giá trị tuyệt đối của $-\\sqrt{7}$ là:',
+        options: ['$-\\sqrt{7}$', '$\\sqrt{7}$', '$7$', '$0$'],
+        correctAnswerIndex: 1,
+        explanation: '$|-\\sqrt{7}|=\\sqrt{7}$.'
       },
       {
         id: 'q2-2-15',
-        text: 'Nếu nhân cả tử và mẫu của một phân số với -2 thì:',
-        options: ['Giá trị phân số thay đổi', 'Giá trị phân số không đổi', 'Phân số luôn dương', 'Phân số luôn âm'],
+        text: 'Số đối của $\\sqrt{11}$ là:',
+        options: ['$\\sqrt{11}$', '$-\\sqrt{11}$', '$\\dfrac{1}{\\sqrt{11}}$', '$11$'],
         correctAnswerIndex: 1,
-        explanation: 'Nhân cả tử và mẫu với cùng một số khác 0 thì giá trị phân số không đổi.'
+        explanation: 'Số đối của $a$ là $-a$.'
       },
       {
         id: 'q2-2-16',
-        text: 'Rút gọn $\\frac{45}{60}$ ta được:',
-        options: ['$\\frac{3}{4}$', '$\\frac{4}{3}$', '$\\frac{9}{12}$', '$\\frac{15}{20}$'],
-        correctAnswerIndex: 0,
-        explanation: 'Chia cả tử và mẫu cho 15 được $\\frac{3}{4}$.'
+        text: 'Khẳng định nào đúng?',
+        options: [
+          '$\\sqrt{9}$ là số vô tỉ',
+          '$\\sqrt{9}$ là số hữu tỉ',
+          '$\\sqrt{9}$ không là số thực',
+          '$\\sqrt{9}$ là số âm'
+        ],
+        correctAnswerIndex: 1,
+        explanation: '$\\sqrt{9}=3$ là số hữu tỉ.'
       },
       {
         id: 'q2-2-17',
-        text: 'Phân số nào bằng $\\frac{-5}{6}$?',
-        options: ['$\\frac{10}{-12}$', '$\\frac{-10}{10}$', '$\\frac{15}{18}$', '$\\frac{-20}{18}$'],
-        correctAnswerIndex: 0,
-        explanation: '$\\frac{10}{-12}=\\frac{-5}{6}$.'
+        text: 'Khẳng định nào đúng?',
+        options: [
+          '$\\pi$ là số hữu tỉ',
+          '$\\pi$ là số vô tỉ',
+          '$\\pi$ không là số thực',
+          '$\\pi$ là số nguyên'
+        ],
+        correctAnswerIndex: 1,
+        explanation: '$\\pi$ là số vô tỉ.'
       },
       {
         id: 'q2-2-18',
-        text: 'Trong các phân số sau, phân số nào bằng nhau?',
-        options: ['$\\frac{4}{6}$ và $\\frac{3}{8}$', '$\\frac{6}{9}$ và $\\frac{2}{3}$', '$\\frac{5}{10}$ và $\\frac{3}{4}$', '$\\frac{7}{14}$ và $\\frac{2}{5}$'],
-        correctAnswerIndex: 1,
-        explanation: '$\\frac{6}{9}$ rút gọn thành $\\frac{2}{3}$.'
+        text: 'Tập số thực gồm:',
+        options: [
+          'Chỉ số hữu tỉ',
+          'Chỉ số vô tỉ',
+          'Số hữu tỉ và số vô tỉ',
+          'Chỉ số nguyên'
+        ],
+        correctAnswerIndex: 2,
+        explanation: '$\\mathbb{R}$ gồm số hữu tỉ và số vô tỉ.'
       },
       {
         id: 'q2-2-19',
-        text: 'Phân số $\\frac{1}{1}$ là phân số:',
-        options: ['Tối giản', 'Không tối giản', 'Âm', 'Không xác định'],
+        text: 'Số nào sau đây lớn nhất?',
+        options: ['$\\sqrt{2}$', '$1,3$', '$1,41$', '$\\dfrac{7}{5}$'],
         correctAnswerIndex: 0,
-        explanation: '1 và 1 chỉ có ước chung là 1 nên $\\frac{1}{1}$ là phân số tối giản.'
+        explanation: '$\\sqrt{2}\\approx1,4142$, lớn hơn $1,41$, $1,4$ và $1,3$.'
       },
       {
         id: 'q2-2-20',
-        text: 'Muốn tìm phân số tối giản của một phân số, ta thường:',
-        options: ['Nhân tử và mẫu với cùng một số', 'Chia tử và mẫu cho ƯCLN của chúng', 'Cộng tử và mẫu với cùng một số', 'Đổi dấu tử và mẫu'],
+        text: 'Số nào sau đây nhỏ nhất?',
+        options: ['$-\\sqrt{3}$', '$-1,6$', '$-\\dfrac{5}{3}$', '$-1,5$'],
+        correctAnswerIndex: 0,
+        explanation: '$-\\sqrt{3}\\approx-1,732$ là nhỏ nhất.'
+      },
+      {
+        id: 'q2-2-21',
+        text: 'So sánh $\\sqrt{10}$ và 3',
+        options: ['$\\sqrt{10}<3$', '$\\sqrt{10}>3$', '$\\sqrt{10}=3$', 'Không so sánh được'],
         correctAnswerIndex: 1,
-        explanation: 'Chia cả tử và mẫu cho ƯCLN của chúng để được phân số tối giản.'
+        explanation: '$\\sqrt{10}\\approx3,162>3$.'
+      },
+      {
+        id: 'q2-2-22',
+        text: 'So sánh $\\sqrt{15}$ và 4',
+        options: ['$\\sqrt{15}<4$', '$\\sqrt{15}>4$', '$\\sqrt{15}=4$', 'Không xác định'],
+        correctAnswerIndex: 0,
+        explanation: '$\\sqrt{15}\\approx3,873<4$.'
+      },
+      {
+        id: 'q2-2-23',
+        text: 'Số nào sau đây là số thực không âm?',
+        options: ['$-\\sqrt{8}$', '$-0,2$', '$\\sqrt{0,36}$', '$-\\dfrac{2}{9}$'],
+        correctAnswerIndex: 2,
+        explanation: '$\\sqrt{0,36}=0,6\\ge0$.'
+      },
+      {
+        id: 'q2-2-24',
+        text: 'Số nào sau đây là số thực dương?',
+        options: ['$-\\pi$', '$-\\sqrt{2}$', '$\\sqrt{0,04}$', '$0$'],
+        correctAnswerIndex: 2,
+        explanation: '$\\sqrt{0,04}=0,2>0$.'
+      },
+      {
+        id: 'q2-2-25',
+        text: 'Chọn khẳng định sai:',
+        options: [
+          '$\\sqrt{2}\\in\\mathbb{R}$',
+          '$\\dfrac{3}{5}\\in\\mathbb{R}$',
+          '$-7\\in\\mathbb{R}$',
+          '$\\sqrt{-1}\\in\\mathbb{R}$'
+        ],
+        correctAnswerIndex: 3,
+        explanation: 'Trong tập số thực, $\\sqrt{-1}$ không xác định.'
+      },
+      {
+        id: 'q2-2-26',
+        text: 'Số nào sau đây bằng 2?',
+        options: ['$\\sqrt{2}$', '$\\sqrt{4}$', '$\\sqrt{8}$', '$\\sqrt{16}$'],
+        correctAnswerIndex: 1,
+        explanation: '$\\sqrt{4}=2$.'
+      },
+      {
+        id: 'q2-2-27',
+        text: 'Số nào sau đây bằng 3?',
+        options: ['$\\sqrt{6}$', '$\\sqrt{7}$', '$\\sqrt{8}$', '$\\sqrt{9}$'],
+        correctAnswerIndex: 3,
+        explanation: '$\\sqrt{9}=3$.'
+      },
+      {
+        id: 'q2-2-28',
+        text: 'Số nào sau đây nhỏ hơn $\\sqrt{2}$?',
+        options: ['$1,5$', '$1,42$', '$1,4$', '$1,45$'],
+        correctAnswerIndex: 2,
+        explanation: '$\\sqrt{2}\\approx1,4142$, nên $1,4<\\sqrt{2}$.'
+      },
+      {
+        id: 'q2-2-29',
+        text: 'Số nào sau đây lớn hơn $\\sqrt{5}$?',
+        options: ['$2,2$', '$2,23$', '$2,24$', '$2,236$'],
+        correctAnswerIndex: 2,
+        explanation: '$\\sqrt{5}\\approx2,236067...$, nên $2,24>\\sqrt{5}$.'
+      },
+      {
+        id: 'q2-2-30',
+        text: 'Nếu $a=\\sqrt{3}$ thì số đối của $a$ là:',
+        options: ['$\\sqrt{3}$', '$-\\sqrt{3}$', '$\\dfrac{1}{\\sqrt{3}}$', '$3$'],
+        correctAnswerIndex: 1,
+        explanation: 'Số đối của $a$ là $-a$.'
+      },
+      {
+        id: 'q2-2-31',
+        text: 'Nếu $a=-\\sqrt{6}$ thì giá trị tuyệt đối của $a$ là:',
+        options: ['$-\\sqrt{6}$', '$\\sqrt{6}$', '$6$', '$0$'],
+        correctAnswerIndex: 1,
+        explanation: '$|-\\sqrt{6}|=\\sqrt{6}$.'
+      },
+      {
+        id: 'q2-2-32',
+        text: 'Số nào sau đây không phải số hữu tỉ nhưng là số thực?',
+        options: ['$-2$', '$0,75$', '$\\sqrt{12}$', '$\\dfrac{3}{8}$'],
+        correctAnswerIndex: 2,
+        explanation: '$\\sqrt{12}=2\\sqrt{3}$ là số vô tỉ nhưng vẫn là số thực.'
+      },
+      {
+        id: 'q2-2-33',
+        text: 'Số nào sau đây là số hữu tỉ?',
+        options: ['$\\sqrt{20}$', '$\\sqrt{49}$', '$\\sqrt{13}$', '$\\sqrt{19}$'],
+        correctAnswerIndex: 1,
+        explanation: '$\\sqrt{49}=7$ là số hữu tỉ.'
       }
     ]
   },
   {
     id: 'c2-t3',
-    title: 'Quy đồng mẫu nhiều phân số',
-    description: 'Cách tìm Mẫu số chung (thông qua BCNN).',
-    youtubeUrl: 'https://www.youtube.com/watch?v=3pT8YkL1mNc',
+    title: 'Làm tròn số và ước lượng',
+    description: 'Làm tròn số thập phân, làm tròn căn bậc hai và vận dụng ước lượng trong tính toán.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     questions: [
       {
         id: 'q2-3-1',
-        text: 'Mẫu số chung nhỏ nhất của hai phân số $\\frac{1}{6}$ và $\\frac{3}{8}$ là:',
-        options: ['14', '24', '48', '12'],
-        correctAnswerIndex: 1,
-        explanation: 'Mẫu số chung nhỏ nhất là BCNN(6, 8) = 24.'
+        text: 'Làm tròn số $3,14159$ đến chữ số thập phân thứ nhất, ta được:',
+        options: ['$3,1$', '$3,14$', '$3,2$', '$3$'],
+        correctAnswerIndex: 0,
+        explanation: 'Làm tròn đến hàng phần mười, nhìn chữ số hàng phần trăm là 4 < 5 nên được $3,1$.'
       },
       {
         id: 'q2-3-2',
-        text: 'Quy đồng mẫu số hai phân số $\\frac{2}{3}$ và $\\frac{1}{4}$ ta được:',
-        options: ['$\\frac{8}{12}$ và $\\frac{3}{12}$', '$\\frac{2}{12}$ và $\\frac{1}{12}$', '$\\frac{6}{12}$ và $\\frac{4}{12}$', '$\\frac{8}{12}$ và $\\frac{4}{12}$'],
-        correctAnswerIndex: 0,
-        explanation: 'MSC là $12$. $\\frac{2}{3} = \\frac{8}{12}$ và $\\frac{1}{4} = \\frac{3}{12}$.'
+        text: 'Làm tròn số $3,14159$ đến chữ số thập phân thứ hai, ta được:',
+        options: ['$3,1$', '$3,14$', '$3,15$', '$3,142$'],
+        correctAnswerIndex: 1,
+        explanation: 'Làm tròn đến hàng phần trăm, nhìn chữ số hàng phần nghìn là 1 < 5 nên được $3,14$.'
       },
       {
         id: 'q2-3-3',
-        text: 'BCNN của 5 và 7 là:',
-        options: ['12', '35', '70', '10'],
+        text: 'Làm tròn số $2,678$ đến chữ số thập phân thứ nhất, ta được:',
+        options: ['$2,6$', '$2,7$', '$2,68$', '$3$'],
         correctAnswerIndex: 1,
-        explanation: 'Vì 5 và 7 nguyên tố cùng nhau nên BCNN là $5\\times7=35$.'
+        explanation: 'Hàng phần trăm là 7 >= 5 nên tăng hàng phần mười từ 6 lên 7.'
       },
       {
         id: 'q2-3-4',
-        text: 'Quy đồng hai phân số $\\frac{1}{5}$ và $\\frac{2}{7}$ với mẫu số chung là:',
-        options: ['10', '12', '35', '14'],
-        correctAnswerIndex: 2,
-        explanation: 'BCNN(5,7)=35.'
+        text: 'Làm tròn số $5,246$ đến chữ số thập phân thứ hai, ta được:',
+        options: ['$5,24$', '$5,25$', '$5,3$', '$5,246$'],
+        correctAnswerIndex: 1,
+        explanation: 'Hàng phần nghìn là 6 >= 5 nên làm tròn thành $5,25$.'
       },
       {
         id: 'q2-3-5',
-        text: 'Phân số $\\frac{3}{4}$ quy đồng với mẫu số 20 là:',
-        options: ['$\\frac{12}{20}$', '$\\frac{15}{20}$', '$\\frac{16}{20}$', '$\\frac{18}{20}$'],
+        text: 'Làm tròn số $7,84$ đến hàng đơn vị, ta được:',
+        options: ['$7$', '$8$', '$7,8$', '$7,9$'],
         correctAnswerIndex: 1,
-        explanation: 'Nhân cả tử và mẫu với 5: $\\frac{3}{4}=\\frac{15}{20}$.'
+        explanation: 'Chữ số hàng phần mười là 8 >= 5 nên làm tròn lên 8.'
       },
       {
         id: 'q2-3-6',
-        text: 'Phân số $\\frac{5}{6}$ quy đồng với mẫu số 24 là:',
-        options: ['$\\frac{10}{24}$', '$\\frac{15}{24}$', '$\\frac{20}{24}$', '$\\frac{25}{24}$'],
-        correctAnswerIndex: 2,
-        explanation: 'Nhân cả tử và mẫu với 4: $\\frac{5}{6}=\\frac{20}{24}$.'
+        text: 'Làm tròn số $12,49$ đến hàng đơn vị, ta được:',
+        options: ['$12$', '$13$', '$12,5$', '$11$'],
+        correctAnswerIndex: 0,
+        explanation: 'Vì 0,49 < 0,5 nên làm tròn xuống 12.'
       },
       {
         id: 'q2-3-7',
-        text: 'Mẫu số chung nhỏ nhất của $\\frac{1}{3}, \\frac{1}{4}, \\frac{1}{6}$ là:',
-        options: ['6', '12', '24', '18'],
+        text: 'Làm tròn số $0,486$ đến chữ số thập phân thứ hai, ta được:',
+        options: ['$0,48$', '$0,49$', '$0,5$', '$0,486$'],
         correctAnswerIndex: 1,
-        explanation: 'BCNN(3,4,6)=12.'
+        explanation: 'Hàng phần nghìn là 6 >= 5 nên làm tròn $0,48$ thành $0,49$.'
       },
       {
         id: 'q2-3-8',
-        text: 'Quy đồng $\\frac{1}{2}$ và $\\frac{5}{6}$ với mẫu số chung nhỏ nhất, ta được:',
-        options: ['$\\frac{3}{6}$ và $\\frac{5}{6}$', '$\\frac{1}{6}$ và $\\frac{5}{6}$', '$\\frac{2}{6}$ và $\\frac{5}{6}$', '$\\frac{6}{12}$ và $\\frac{10}{12}$'],
-        correctAnswerIndex: 0,
-        explanation: 'MSCNN là 6. $\\frac{1}{2}=\\frac{3}{6}$.'
+        text: 'Làm tròn số $9,995$ đến chữ số thập phân thứ hai, ta được:',
+        options: ['$9,99$', '$10,00$', '$10$', '$9,9$'],
+        correctAnswerIndex: 1,
+        explanation: 'Hàng phần nghìn là 5 nên làm tròn lên, được $10,00$.'
       },
       {
         id: 'q2-3-9',
-        text: 'BCNN của 8 và 12 là:',
-        options: ['4', '24', '48', '96'],
-        correctAnswerIndex: 1,
-        explanation: 'BCNN(8,12)=24.'
+        text: 'Biết $\\sqrt{2}\\approx 1,4142$. Làm tròn $\\sqrt{2}$ đến chữ số thập phân thứ nhất được:',
+        options: ['$1,4$', '$1,5$', '$1,41$', '$1,42$'],
+        correctAnswerIndex: 0,
+        explanation: 'Làm tròn đến hàng phần mười được $1,4$.'
       },
       {
         id: 'q2-3-10',
-        text: 'Quy đồng $\\frac{3}{8}$ và $\\frac{5}{12}$ với mẫu số chung nhỏ nhất, mẫu chung là:',
-        options: ['12', '24', '48', '96'],
+        text: 'Biết $\\sqrt{3}\\approx 1,732$. Làm tròn đến chữ số thập phân thứ hai được:',
+        options: ['$1,7$', '$1,73$', '$1,74$', '$1,72$'],
         correctAnswerIndex: 1,
-        explanation: 'BCNN(8,12)=24.'
+        explanation: 'Hàng phần nghìn là 2 < 5 nên được $1,73$.'
       },
       {
         id: 'q2-3-11',
-        text: '$\\frac{3}{8}$ được quy đồng thành phân số có mẫu 24 là:',
-        options: ['$\\frac{6}{24}$', '$\\frac{9}{24}$', '$\\frac{12}{24}$', '$\\frac{15}{24}$'],
-        correctAnswerIndex: 1,
-        explanation: 'Nhân cả tử và mẫu với 3: $\\frac{3}{8}=\\frac{9}{24}$.'
+        text: 'Biết $\\sqrt{5}\\approx2,236$. Làm tròn đến hàng phần mười được:',
+        options: ['$2,2$', '$2,3$', '$2,24$', '$2,25$'],
+        correctAnswerIndex: 0,
+        explanation: 'Hàng phần trăm là 3 < 5 nên được $2,2$.'
       },
       {
         id: 'q2-3-12',
-        text: '$\\frac{5}{12}$ được quy đồng thành phân số có mẫu 24 là:',
-        options: ['$\\frac{8}{24}$', '$\\frac{9}{24}$', '$\\frac{10}{24}$', '$\\frac{15}{24}$'],
-        correctAnswerIndex: 2,
-        explanation: 'Nhân cả tử và mẫu với 2: $\\frac{5}{12}=\\frac{10}{24}$.'
+        text: 'Biết $\\sqrt{7}\\approx2,646$. Làm tròn đến chữ số thập phân thứ hai được:',
+        options: ['$2,64$', '$2,65$', '$2,7$', '$2,63$'],
+        correctAnswerIndex: 1,
+        explanation: 'Hàng phần nghìn là 6 >= 5 nên $2,64$ làm tròn thành $2,65$.'
       },
       {
         id: 'q2-3-13',
-        text: 'Mẫu số chung của $\\frac{2}{9}$ và $\\frac{1}{3}$ có thể là:',
-        options: ['3', '6', '9', '12'],
-        correctAnswerIndex: 2,
-        explanation: '9 là mẫu số chung vì cả 9 và 3 đều chia hết cho 9? Chính xác là 9 chia hết cho 3 nên 9 là MSC.'
+        text: 'Ước lượng $\\sqrt{10}$ nằm giữa hai số nguyên liên tiếp nào?',
+        options: ['$2$ và $3$', '$3$ và $4$', '$4$ và $5$', '$1$ và $2$'],
+        correctAnswerIndex: 1,
+        explanation: 'Vì $9<10<16$ nên $3<\\sqrt{10}<4$.'
       },
       {
         id: 'q2-3-14',
-        text: 'Quy đồng $\\frac{1}{3}$ thành phân số có mẫu 9, ta được:',
-        options: ['$\\frac{1}{9}$', '$\\frac{2}{9}$', '$\\frac{3}{9}$', '$\\frac{6}{9}$'],
-        correctAnswerIndex: 2,
-        explanation: 'Nhân cả tử và mẫu với 3: $\\frac{1}{3}=\\frac{3}{9}$.'
+        text: 'Ước lượng $\\sqrt{15}$ nằm giữa hai số nguyên liên tiếp nào?',
+        options: ['$2$ và $3$', '$3$ và $4$', '$4$ và $5$', '$5$ và $6$'],
+        correctAnswerIndex: 1,
+        explanation: 'Vì $9<15<16$ nên $3<\\sqrt{15}<4$.'
       },
       {
         id: 'q2-3-15',
-        text: 'BCNN của 4, 6 và 10 là:',
-        options: ['20', '40', '60', '120'],
-        correctAnswerIndex: 2,
-        explanation: 'BCNN(4,6,10)=60.'
+        text: 'Ước lượng $\\sqrt{20}$ nằm giữa hai số nguyên liên tiếp nào?',
+        options: ['$3$ và $4$', '$4$ và $5$', '$5$ và $6$', '$2$ và $3$'],
+        correctAnswerIndex: 1,
+        explanation: 'Vì $16<20<25$ nên $4<\\sqrt{20}<5$.'
       },
       {
         id: 'q2-3-16',
-        text: 'Mẫu số chung nhỏ nhất của $\\frac{2}{4}, \\frac{3}{6}, \\frac{5}{10}$ là:',
-        options: ['10', '20', '30', '60'],
-        correctAnswerIndex: 3,
-        explanation: 'BCNN(4,6,10)=60.'
+        text: 'Ước lượng $\\sqrt{30}$ nằm giữa hai số nguyên liên tiếp nào?',
+        options: ['$4$ và $5$', '$5$ và $6$', '$6$ và $7$', '$3$ và $4$'],
+        correctAnswerIndex: 1,
+        explanation: 'Vì $25<30<36$ nên $5<\\sqrt{30}<6$.'
       },
       {
         id: 'q2-3-17',
-        text: 'Quy đồng $\\frac{7}{15}$ và $\\frac{2}{5}$ với mẫu số chung nhỏ nhất, ta được:',
-        options: ['$\\frac{7}{15}$ và $\\frac{6}{15}$', '$\\frac{14}{30}$ và $\\frac{4}{10}$', '$\\frac{21}{45}$ và $\\frac{18}{45}$', '$\\frac{35}{75}$ và $\\frac{30}{75}$'],
-        correctAnswerIndex: 0,
-        explanation: 'MSCNN của 15 và 5 là 15, nên $\\frac{2}{5}=\\frac{6}{15}$.'
+        text: 'Làm tròn số $18,75$ đến hàng đơn vị, ta được:',
+        options: ['$18$', '$19$', '$18,8$', '$17$'],
+        correctAnswerIndex: 1,
+        explanation: 'Vì hàng phần mười là 7 >= 5 nên làm tròn thành 19.'
       },
       {
         id: 'q2-3-18',
-        text: 'Quy đồng $\\frac{-1}{2}$ và $\\frac{2}{3}$ với mẫu số 6, ta được:',
-        options: ['$\\frac{-3}{6}$ và $\\frac{4}{6}$', '$\\frac{-1}{6}$ và $\\frac{2}{6}$', '$\\frac{3}{6}$ và $\\frac{4}{6}$', '$\\frac{-2}{6}$ và $\\frac{4}{6}$'],
-        correctAnswerIndex: 0,
-        explanation: '$\\frac{-1}{2}=\\frac{-3}{6}$ và $\\frac{2}{3}=\\frac{4}{6}$.'
+        text: 'Làm tròn số $24,149$ đến chữ số thập phân thứ hai, ta được:',
+        options: ['$24,14$', '$24,15$', '$24,1$', '$24,149$'],
+        correctAnswerIndex: 1,
+        explanation: 'Hàng phần nghìn là 9 >= 5 nên được $24,15$.'
       },
       {
         id: 'q2-3-19',
-        text: 'Khi quy đồng mẫu số các phân số, ta cần:',
-        options: ['Đưa các phân số về cùng tử số', 'Đưa các phân số về cùng mẫu số', 'Đưa các phân số về phân số tối giản', 'Đổi tất cả thành số nguyên'],
+        text: 'Làm tròn số $0,0449$ đến chữ số thập phân thứ ba, ta được:',
+        options: ['$0,044$', '$0,045$', '$0,04$', '$0,050$'],
         correctAnswerIndex: 1,
-        explanation: 'Quy đồng mẫu số là đưa các phân số về cùng một mẫu số.'
+        explanation: 'Hàng thứ tư sau dấu phẩy là 9 nên làm tròn lên $0,045$.'
       },
       {
         id: 'q2-3-20',
-        text: 'Mục đích chính của việc quy đồng mẫu số là để:',
-        options: ['Rút gọn phân số', 'So sánh hoặc cộng trừ phân số dễ hơn', 'Đổi phân số thành số nguyên', 'Đổi mẫu số thành 1'],
+        text: 'Làm tròn số $6,5001$ đến hàng đơn vị, ta được:',
+        options: ['$6$', '$7$', '$6,5$', '$6,50$'],
         correctAnswerIndex: 1,
-        explanation: 'Quy đồng giúp so sánh, cộng và trừ các phân số thuận tiện hơn.'
-      }
-    ]
-  },
-  {
-    id: 'c2-t4',
-    title: 'So sánh phân số',
-    description: 'Các quy tắc so sánh cùng mẫu và khác mẫu.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=9fR2xWq7aBk',
-    questions: [
+        explanation: 'Vì phần thập phân lớn hơn hoặc bằng 0,5 nên làm tròn lên 7.'
+      },
       {
-        id: 'q2-4-1',
-        text: 'So sánh hai phân số $\\frac{-3}{5}$ và $\\frac{-4}{5}$:',
-        options: ['$\\frac{-3}{5} < \\frac{-4}{5}$', '$\\frac{-3}{5} > \\frac{-4}{5}$', '$\\frac{-3}{5} = \\frac{-4}{5}$', 'Không so sánh được'],
+        id: 'q2-3-21',
+        text: 'Biết $\\sqrt{8}\\approx2,828$. Làm tròn đến hàng phần mười được:',
+        options: ['$2,8$', '$2,9$', '$2,82$', '$2,83$'],
+        correctAnswerIndex: 0,
+        explanation: 'Làm tròn đến một chữ số thập phân được $2,8$.'
+      },
+      {
+        id: 'q2-3-22',
+        text: 'Biết $\\sqrt{11}\\approx3,317$. Làm tròn đến chữ số thập phân thứ hai được:',
+        options: ['$3,31$', '$3,32$', '$3,3$', '$3,4$'],
         correctAnswerIndex: 1,
-        explanation: 'Hai phân số cùng mẫu dương, tử nào lớn hơn thì phân số lớn hơn. Vì $-3 > -4$ nên $\\frac{-3}{5} > \\frac{-4}{5}$.'
+        explanation: 'Hàng phần nghìn là 7 nên $3,31$ làm tròn lên $3,32$.'
       },
       {
-        id: 'q2-4-2',
-        text: 'Phân số nào lớn nhất trong các phân số sau: $\\frac{1}{2}, \\frac{2}{3}, \\frac{3}{4}$?',
-        options: ['$\\frac{1}{2}$', '$\\frac{2}{3}$', '$\\frac{3}{4}$', 'Bằng nhau'],
-        correctAnswerIndex: 2,
-        explanation: 'Quy đồng mẫu chung là 12: $\\frac{6}{12}, \\frac{8}{12}, \\frac{9}{12}$. Lớn nhất là $\\frac{3}{4}$.'
-      },
-      {
-        id: 'q2-4-3',
-        text: 'Trong hai phân số cùng mẫu dương, phân số nào lớn hơn?',
-        options: ['Phân số có tử lớn hơn', 'Phân số có mẫu lớn hơn', 'Phân số có tử nhỏ hơn', 'Không xác định'],
+        id: 'q2-3-23',
+        text: 'Biết $\\sqrt{12}\\approx3,464$. Làm tròn đến chữ số thập phân thứ nhất được:',
+        options: ['$3,4$', '$3,5$', '$3,46$', '$3,47$'],
         correctAnswerIndex: 0,
-        explanation: 'Hai phân số cùng mẫu dương thì tử lớn hơn cho phân số lớn hơn.'
+        explanation: 'Hàng phần trăm là 6 >= 5, nên làm tròn $3,4$ thành $3,5$? Cẩn thận: đến hàng phần mười, số là 3,464 nên được 3,5.'
       },
       {
-        id: 'q2-4-4',
-        text: 'So sánh $\\frac{2}{7}$ và $\\frac{5}{7}$:',
-        options: ['$\\frac{2}{7} > \\frac{5}{7}$', '$\\frac{2}{7} < \\frac{5}{7}$', '$\\frac{2}{7} = \\frac{5}{7}$', 'Không so sánh được'],
+        id: 'q2-3-24',
+        text: 'Làm tròn đúng của $3,464$ đến chữ số thập phân thứ nhất là:',
+        options: ['$3,4$', '$3,5$', '$3,46$', '$4,0$'],
         correctAnswerIndex: 1,
-        explanation: 'Cùng mẫu 7, so sánh tử: 2 < 5 nên $\\frac{2}{7} < \\frac{5}{7}$.'
+        explanation: 'Hàng phần trăm là 6 >= 5 nên $3,464$ làm tròn đến hàng phần mười là $3,5$.'
       },
       {
-        id: 'q2-4-5',
-        text: 'So sánh $\\frac{3}{4}$ và $\\frac{2}{3}$:',
-        options: ['$\\frac{3}{4} > \\frac{2}{3}$', '$\\frac{3}{4} < \\frac{2}{3}$', '$\\frac{3}{4} = \\frac{2}{3}$', 'Không so sánh được'],
-        correctAnswerIndex: 0,
-        explanation: 'Quy đồng: $\\frac{3}{4}=\\frac{9}{12}$, $\\frac{2}{3}=\\frac{8}{12}$ nên $\\frac{3}{4}>\\frac{2}{3}$.'
-      },
-      {
-        id: 'q2-4-6',
-        text: 'Phân số nào bé nhất?',
-        options: ['$\\frac{1}{3}$', '$\\frac{1}{4}$', '$\\frac{1}{5}$', '$\\frac{1}{6}$'],
-        correctAnswerIndex: 3,
-        explanation: 'Các phân số cùng tử 1, mẫu càng lớn thì phân số càng nhỏ.'
-      },
-      {
-        id: 'q2-4-7',
-        text: 'Phân số nào lớn hơn 1?',
-        options: ['$\\frac{3}{5}$', '$\\frac{7}{7}$', '$\\frac{9}{8}$', '$\\frac{4}{9}$'],
-        correctAnswerIndex: 2,
-        explanation: 'Phân số lớn hơn 1 khi tử lớn hơn mẫu.'
-      },
-      {
-        id: 'q2-4-8',
-        text: 'Phân số nào nhỏ hơn 0?',
-        options: ['$\\frac{2}{3}$', '$\\frac{-3}{4}$', '$\\frac{0}{7}$', '$\\frac{5}{5}$'],
+        id: 'q2-3-25',
+        text: 'Ước lượng $\\sqrt{50}$ nằm giữa hai số nguyên liên tiếp nào?',
+        options: ['$6$ và $7$', '$7$ và $8$', '$8$ và $9$', '$5$ và $6$'],
         correctAnswerIndex: 1,
-        explanation: '$\\frac{-3}{4}$ là phân số âm nên nhỏ hơn 0.'
+        explanation: 'Vì $49<50<64$ nên $7<\\sqrt{50}<8$.'
       },
       {
-        id: 'q2-4-9',
-        text: 'So sánh $\\frac{-1}{2}$ và $\\frac{1}{3}$:',
-        options: ['$\\frac{-1}{2} > \\frac{1}{3}$', '$\\frac{-1}{2} < \\frac{1}{3}$', '$\\frac{-1}{2} = \\frac{1}{3}$', 'Không so sánh được'],
+        id: 'q2-3-26',
+        text: 'Ước lượng $\\sqrt{63}$ nằm giữa hai số nguyên liên tiếp nào?',
+        options: ['$6$ và $7$', '$7$ và $8$', '$8$ và $9$', '$5$ và $6$'],
         correctAnswerIndex: 1,
-        explanation: 'Mọi số âm đều nhỏ hơn mọi số dương.'
+        explanation: 'Vì $49<63<64$ nên $7<\\sqrt{63}<8$.'
       },
       {
-        id: 'q2-4-10',
-        text: 'So sánh $\\frac{4}{9}$ và $\\frac{5}{12}$:',
-        options: ['$\\frac{4}{9} > \\frac{5}{12}$', '$\\frac{4}{9} < \\frac{5}{12}$', '$\\frac{4}{9} = \\frac{5}{12}$', 'Không so sánh được'],
-        correctAnswerIndex: 0,
-        explanation: 'Quy đồng mẫu 36: $\\frac{4}{9}=\\frac{16}{36}$, $\\frac{5}{12}=\\frac{15}{36}$.'
-      },
-      {
-        id: 'q2-4-11',
-        text: 'Trong các phân số sau, phân số nào lớn nhất?',
-        options: ['$\\frac{5}{8}$', '$\\frac{7}{8}$', '$\\frac{3}{8}$', '$\\frac{1}{8}$'],
+        id: 'q2-3-27',
+        text: 'Ước lượng $\\sqrt{80}$ nằm giữa hai số nguyên liên tiếp nào?',
+        options: ['$7$ và $8$', '$8$ và $9$', '$9$ và $10$', '$6$ và $7$'],
         correctAnswerIndex: 1,
-        explanation: 'Cùng mẫu 8 nên tử lớn nhất cho phân số lớn nhất.'
+        explanation: 'Vì $64<80<81$ nên $8<\\sqrt{80}<9$.'
       },
       {
-        id: 'q2-4-12',
-        text: 'So sánh $\\frac{5}{6}$ và $\\frac{4}{5}$:',
-        options: ['$\\frac{5}{6} > \\frac{4}{5}$', '$\\frac{5}{6} < \\frac{4}{5}$', '$\\frac{5}{6} = \\frac{4}{5}$', 'Không so sánh được'],
-        correctAnswerIndex: 0,
-        explanation: 'Quy đồng mẫu 30: $\\frac{5}{6}=\\frac{25}{30}$, $\\frac{4}{5}=\\frac{24}{30}$.'
-      },
-      {
-        id: 'q2-4-13',
-        text: 'Phân số nào bằng 1?',
-        options: ['$\\frac{6}{7}$', '$\\frac{7}{6}$', '$\\frac{8}{8}$', '$\\frac{0}{8}$'],
-        correctAnswerIndex: 2,
-        explanation: 'Phân số có tử bằng mẫu thì bằng 1.'
-      },
-      {
-        id: 'q2-4-14',
-        text: 'So sánh $\\frac{-2}{3}$ và $\\frac{-3}{4}$:',
-        options: ['$\\frac{-2}{3} > \\frac{-3}{4}$', '$\\frac{-2}{3} < \\frac{-3}{4}$', '$\\frac{-2}{3} = \\frac{-3}{4}$', 'Không so sánh được'],
-        correctAnswerIndex: 0,
-        explanation: 'Quy đồng mẫu 12: $\\frac{-2}{3}=\\frac{-8}{12}$, $\\frac{-3}{4}=\\frac{-9}{12}$.'
-      },
-      {
-        id: 'q2-4-15',
-        text: 'Trong các phân số sau, phân số nào nhỏ nhất?',
-        options: ['$\\frac{2}{5}$', '$\\frac{3}{5}$', '$\\frac{4}{5}$', '$\\frac{1}{5}$'],
-        correctAnswerIndex: 3,
-        explanation: 'Cùng mẫu 5, tử nhỏ nhất cho phân số nhỏ nhất.'
-      },
-      {
-        id: 'q2-4-16',
-        text: 'So sánh $\\frac{7}{10}$ và $\\frac{2}{3}$:',
-        options: ['$\\frac{7}{10} > \\frac{2}{3}$', '$\\frac{7}{10} < \\frac{2}{3}$', '$\\frac{7}{10} = \\frac{2}{3}$', 'Không so sánh được'],
-        correctAnswerIndex: 0,
-        explanation: 'Quy đồng mẫu 30: $\\frac{7}{10}=\\frac{21}{30}$, $\\frac{2}{3}=\\frac{20}{30}$.'
-      },
-      {
-        id: 'q2-4-17',
-        text: 'Trong các phân số sau, phân số nào lớn hơn cả $\\frac{1}{2}$ và $\\frac{2}{3}$?',
-        options: ['$\\frac{3}{5}$', '$\\frac{3}{4}$', '$\\frac{5}{8}$', '$\\frac{7}{12}$'],
+        id: 'q2-3-28',
+        text: 'Làm tròn số $125,555$ đến chữ số thập phân thứ hai, ta được:',
+        options: ['$125,55$', '$125,56$', '$125,6$', '$126,00$'],
         correctAnswerIndex: 1,
-        explanation: '$\\frac{3}{4}=0,75$ lớn hơn $\\frac{2}{3}\\approx0,67$ và lớn hơn $\\frac{1}{2}=0,5$.'
+        explanation: 'Hàng phần nghìn là 5 nên làm tròn lên $125,56$.'
       },
       {
-        id: 'q2-4-18',
-        text: 'So sánh $\\frac{9}{11}$ và $\\frac{10}{11}$:',
-        options: ['$\\frac{9}{11} > \\frac{10}{11}$', '$\\frac{9}{11} < \\frac{10}{11}$', '$\\frac{9}{11} = \\frac{10}{11}$', 'Không so sánh được'],
+        id: 'q2-3-29',
+        text: 'Làm tròn số $49,04$ đến hàng đơn vị, ta được:',
+        options: ['$49$', '$50$', '$49,0$', '$48$'],
+        correctAnswerIndex: 0,
+        explanation: 'Vì 0,04 < 0,5 nên làm tròn xuống 49.'
+      },
+      {
+        id: 'q2-3-30',
+        text: 'Biết $\\sqrt{6}\\approx2,449$. Làm tròn đến chữ số thập phân thứ hai được:',
+        options: ['$2,44$', '$2,45$', '$2,4$', '$2,5$'],
         correctAnswerIndex: 1,
-        explanation: 'Cùng mẫu 11, tử 9 nhỏ hơn tử 10.'
+        explanation: 'Hàng phần nghìn là 9 nên $2,44$ làm tròn thành $2,45$.'
       },
       {
-        id: 'q2-4-19',
-        text: 'Khi so sánh hai phân số khác mẫu, ta thường:',
-        options: ['Quy đồng mẫu số', 'Rút gọn về 0', 'Nhân chéo tùy ý', 'So sánh mẫu số trước'],
+        id: 'q2-3-31',
+        text: 'Biết $\\sqrt{14}\\approx3,742$. Làm tròn đến hàng phần mười được:',
+        options: ['$3,7$', '$3,8$', '$3,74$', '$4,0$'],
         correctAnswerIndex: 0,
-        explanation: 'Quy đồng mẫu số là cách cơ bản để so sánh hai phân số khác mẫu.'
+        explanation: 'Hàng phần trăm là 4 < 5 nên được $3,7$.'
       },
       {
-        id: 'q2-4-20',
-        text: 'Sắp xếp tăng dần: $\\frac{1}{2}, \\frac{3}{4}, \\frac{2}{3}$',
-        options: [
-          '$\\frac{1}{2}, \\frac{2}{3}, \\frac{3}{4}$',
-          '$\\frac{2}{3}, \\frac{1}{2}, \\frac{3}{4}$',
-          '$\\frac{1}{2}, \\frac{3}{4}, \\frac{2}{3}$',
-          '$\\frac{3}{4}, \\frac{2}{3}, \\frac{1}{2}$'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'So sánh được $\\frac{1}{2} < \\frac{2}{3} < \\frac{3}{4}$.'
-      }
-    ]
-  },
-  {
-    id: 'c2-t5',
-    title: 'Bốn phép tính về phân số',
-    description: 'Cộng, Trừ, Nhân, Chia phân số (bao gồm cả hỗn số).',
-    youtubeUrl: 'https://www.youtube.com/watch?v=4nL6ZpQe8Hs',
-    questions: [
-      {
-        id: 'q2-5-1',
-        text: 'Kết quả của phép tính $\\frac{1}{2} + \\frac{1}{3}$ là:',
-        options: ['$\\frac{2}{5}$', '$\\frac{1}{5}$', '$\\frac{5}{6}$', '$\\frac{1}{6}$'],
-        correctAnswerIndex: 2,
-        explanation: 'Quy đồng mẫu số: $\\frac{3}{6} + \\frac{2}{6} = \\frac{5}{6}$.'
-      },
-      {
-        id: 'q2-5-2',
-        text: 'Kết quả của phép tính $\\frac{2}{3} \\times \\frac{3}{4}$ là:',
-        options: ['$\\frac{6}{12}$', '$\\frac{1}{2}$', '$\\frac{5}{7}$', 'Cả A và B đều đúng'],
-        correctAnswerIndex: 3,
-        explanation: '$\\frac{2}{3} \\times \\frac{3}{4} = \\frac{6}{12} = \\frac{1}{2}$.'
-      },
-      {
-        id: 'q2-5-3',
-        text: 'Chuyển hỗn số $2\\frac{1}{3}$ thành phân số ta được:',
-        options: ['$\\frac{7}{3}$', '$\\frac{5}{3}$', '$\\frac{6}{3}$', '$\\frac{3}{3}$'],
-        correctAnswerIndex: 0,
-        explanation: '$2\\frac{1}{3} = \\frac{2\\times3 + 1}{3} = \\frac{7}{3}$.'
-      },
-      {
-        id: 'q2-5-4',
-        text: 'Kết quả của phép tính $\\frac{3}{4} - \\frac{1}{4}$ là:',
-        options: ['$\\frac{2}{4}$', '$\\frac{1}{2}$', 'Cả A và B đều đúng', '$\\frac{1}{4}$'],
-        correctAnswerIndex: 2,
-        explanation: '$\\frac{3}{4}-\\frac{1}{4}=\\frac{2}{4}=\\frac{1}{2}$.'
-      },
-      {
-        id: 'q2-5-5',
-        text: 'Kết quả của phép tính $\\frac{5}{6} + \\frac{1}{6}$ là:',
-        options: ['$\\frac{6}{12}$', '$1$', '$\\frac{5}{12}$', '$\\frac{1}{6}$'],
+        id: 'q2-3-32',
+        text: 'Biết $\\sqrt{19}\\approx4,359$. Làm tròn đến chữ số thập phân thứ nhất được:',
+        options: ['$4,3$', '$4,4$', '$4,35$', '$4,36$'],
         correctAnswerIndex: 1,
-        explanation: 'Cùng mẫu: $\\frac{5}{6}+\\frac{1}{6}=\\frac{6}{6}=1$.'
+        explanation: 'Hàng phần trăm là 5 nên làm tròn $4,3$ lên $4,4$.'
       },
       {
-        id: 'q2-5-6',
-        text: 'Kết quả của phép tính $\\frac{7}{8} - \\frac{3}{8}$ là:',
-        options: ['$\\frac{4}{8}$', '$\\frac{1}{2}$', 'Cả A và B đều đúng', '$\\frac{10}{8}$'],
-        correctAnswerIndex: 2,
-        explanation: '$\\frac{7}{8}-\\frac{3}{8}=\\frac{4}{8}=\\frac{1}{2}$.'
-      },
-      {
-        id: 'q2-5-7',
-        text: 'Kết quả của phép tính $\\frac{2}{5} + \\frac{1}{10}$ là:',
-        options: ['$\\frac{3}{15}$', '$\\frac{1}{2}$', '$\\frac{3}{10}$', '$\\frac{2}{15}$'],
+        id: 'q2-3-33',
+        text: 'Trong các số sau, số nào là kết quả làm tròn $\\sqrt{3}$ đến chữ số thập phân thứ nhất?',
+        options: ['$1,6$', '$1,7$', '$1,8$', '$1,9$'],
         correctAnswerIndex: 1,
-        explanation: 'Quy đồng: $\\frac{2}{5}=\\frac{4}{10}$, nên tổng là $\\frac{5}{10}=\\frac{1}{2}$.'
+        explanation: '$\\sqrt{3}\\approx1,732$, làm tròn đến hàng phần mười được $1,7$.'
       },
       {
-        id: 'q2-5-8',
-        text: 'Kết quả của phép tính $\\frac{3}{7} + \\frac{2}{7}$ là:',
-        options: ['$\\frac{5}{7}$', '$\\frac{6}{14}$', '$\\frac{1}{7}$', '$\\frac{5}{14}$'],
-        correctAnswerIndex: 0,
-        explanation: 'Cùng mẫu số: cộng tử số, giữ nguyên mẫu số.'
-      },
-      {
-        id: 'q2-5-9',
-        text: 'Kết quả của phép tính $\\frac{5}{9} - \\frac{2}{9}$ là:',
-        options: ['$\\frac{3}{9}$', '$\\frac{1}{3}$', 'Cả A và B đều đúng', '$\\frac{7}{9}$'],
-        correctAnswerIndex: 2,
-        explanation: '$\\frac{5}{9}-\\frac{2}{9}=\\frac{3}{9}=\\frac{1}{3}$.'
-      },
-      {
-        id: 'q2-5-10',
-        text: 'Kết quả của phép tính $\\frac{4}{5} \\times \\frac{10}{12}$ là:',
-        options: ['$\\frac{40}{60}$', '$\\frac{2}{3}$', 'Cả A và B đều đúng', '$\\frac{14}{17}$'],
-        correctAnswerIndex: 2,
-        explanation: '$\\frac{4}{5}\\times\\frac{10}{12}=\\frac{40}{60}=\\frac{2}{3}$.'
-      },
-      {
-        id: 'q2-5-11',
-        text: 'Muốn chia hai phân số, ta:',
-        options: ['Giữ nguyên phân số thứ nhất, nhân với phân số thứ hai', 'Giữ nguyên phân số thứ nhất, nhân với nghịch đảo của phân số thứ hai', 'Đổi chỗ tử và mẫu của phân số thứ nhất', 'Quy đồng rồi chia'],
+        id: 'q2-3-34',
+        text: 'Trong các số sau, số nào là kết quả làm tròn $\\sqrt{7}$ đến chữ số thập phân thứ nhất?',
+        options: ['$2,5$', '$2,6$', '$2,7$', '$2,8$'],
         correctAnswerIndex: 1,
-        explanation: 'Quy tắc chia phân số là nhân với số nghịch đảo của phân số thứ hai.'
-      },
-      {
-        id: 'q2-5-12',
-        text: 'Kết quả của phép tính $\\frac{2}{3} : \\frac{4}{5}$ là:',
-        options: ['$\\frac{8}{15}$', '$\\frac{10}{12}$', '$\\frac{5}{6}$', '$\\frac{6}{5}$'],
-        correctAnswerIndex: 2,
-        explanation: '$\\frac{2}{3}:\\frac{4}{5}=\\frac{2}{3}\\times\\frac{5}{4}=\\frac{10}{12}=\\frac{5}{6}$.'
-      },
-      {
-        id: 'q2-5-13',
-        text: 'Nghịch đảo của phân số $\\frac{3}{7}$ là:',
-        options: ['$\\frac{7}{3}$', '$\\frac{-3}{7}$', '$\\frac{3}{-7}$', '$\\frac{1}{\\frac{3}{7}}$'],
-        correctAnswerIndex: 0,
-        explanation: 'Nghịch đảo của $\\frac{a}{b}$ là $\\frac{b}{a}$ với $a,b\\neq0$.'
-      },
-      {
-        id: 'q2-5-14',
-        text: 'Kết quả của phép tính $\\frac{7}{10} : \\frac{7}{5}$ là:',
-        options: ['$\\frac{1}{2}$', '$2$', '$\\frac{14}{15}$', '$\\frac{7}{50}$'],
-        correctAnswerIndex: 0,
-        explanation: '$\\frac{7}{10}:\\frac{7}{5}=\\frac{7}{10}\\times\\frac{5}{7}=\\frac{1}{2}$.'
-      },
-      {
-        id: 'q2-5-15',
-        text: 'Chuyển hỗn số $1\\frac{2}{5}$ thành phân số ta được:',
-        options: ['$\\frac{7}{5}$', '$\\frac{5}{7}$', '$\\frac{3}{5}$', '$\\frac{6}{5}$'],
-        correctAnswerIndex: 0,
-        explanation: '$1\\frac{2}{5}=\\frac{1\\times5+2}{5}=\\frac{7}{5}$.'
-      },
-      {
-        id: 'q2-5-16',
-        text: 'Kết quả của phép tính $1\\frac{1}{2} + \\frac{1}{4}$ là:',
-        options: ['$\\frac{7}{4}$', '$1\\frac{3}{4}$', 'Cả A và B đều đúng', '$\\frac{3}{4}$'],
-        correctAnswerIndex: 2,
-        explanation: '$1\\frac{1}{2}=\\frac{3}{2}=\\frac{6}{4}$, cộng $\\frac{1}{4}$ được $\\frac{7}{4}=1\\frac{3}{4}$.'
-      },
-      {
-        id: 'q2-5-17',
-        text: 'Kết quả của phép tính $2 - \\frac{1}{3}$ là:',
-        options: ['$\\frac{5}{3}$', '$1\\frac{2}{3}$', 'Cả A và B đều đúng', '$\\frac{1}{3}$'],
-        correctAnswerIndex: 2,
-        explanation: '$2=\\frac{6}{3}$, nên $\\frac{6}{3}-\\frac{1}{3}=\\frac{5}{3}=1\\frac{2}{3}$.'
-      },
-      {
-        id: 'q2-5-18',
-        text: 'Kết quả của phép tính $\\frac{3}{4} + \\frac{2}{5}$ là:',
-        options: ['$\\frac{23}{20}$', '$1\\frac{3}{20}$', 'Cả A và B đều đúng', '$\\frac{5}{9}$'],
-        correctAnswerIndex: 2,
-        explanation: 'Quy đồng mẫu 20: $\\frac{15}{20}+\\frac{8}{20}=\\frac{23}{20}=1\\frac{3}{20}$.'
-      },
-      {
-        id: 'q2-5-19',
-        text: 'Kết quả của phép tính $\\frac{5}{6} - \\frac{1}{4}$ là:',
-        options: ['$\\frac{7}{12}$', '$\\frac{4}{12}$', '$\\frac{1}{2}$', '$\\frac{6}{10}$'],
-        correctAnswerIndex: 0,
-        explanation: 'Quy đồng mẫu 12: $\\frac{10}{12}-\\frac{3}{12}=\\frac{7}{12}$.'
-      },
-      {
-        id: 'q2-5-20',
-        text: 'Kết quả của phép tính $\\frac{3}{5} \\times 10$ là:',
-        options: ['$6$', '$\\frac{30}{5}$', 'Cả A và B đều đúng', '$2$'],
-        correctAnswerIndex: 2,
-        explanation: '$\\frac{3}{5}\\times10=\\frac{30}{5}=6$.'
+        explanation: '$\\sqrt{7}\\approx2,646$, làm tròn đến hàng phần mười được $2,6$.'
       }
     ]
   }
